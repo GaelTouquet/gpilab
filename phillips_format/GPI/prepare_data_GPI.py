@@ -71,25 +71,25 @@ def centered_array_into_shape(array,shape):
 
 def reconprep_images(data, oversampled_images,header):
     #first, roll in the phase dimension
-    center_oversampled = int(data.shape[-2]/2)
+    center_oversampled = int(oversampled_images.shape[-2]/2)
     oversample_offset = int(header['sin']['oversample_offsets'][0][1]) if 'oversample_offsets' in header['sin'] else 0
     displacement = center_oversampled + oversample_offset
-    oversampled_images = np.roll(oversampled_images,331,axis=-2)
+    oversampled_images = np.roll(oversampled_images,displacement,axis=-2)
 
     #then remove oversampling + crop to output res like philips
     recon_shapes = (int(header['sin']['recon_resolutions'][0][1]), int(header['sin']['recon_resolutions'][0][0]))
     recon_images = centered_array_into_shape(oversampled_images,recon_shapes)
     output_shapes = (int(header['sin']['output_resolutions'][0][1]), int(header['sin']['output_resolutions'][0][0]))
     output_images = centered_array_into_shape(recon_images,output_shapes)
-    return output_images, recon_images
+    return output_images, recon_images, oversampled_images
 
 
 def compute_from_args(data, header):
 
     oversampled_kspaces = oversampled_kspace_from_scan(data, header)
     oversampled_images = np.fft.fftshift(np.fft.ifft2(np.fft.ifftshift(oversampled_kspaces,axes=(-2,-1)),axes=(-2,-1)),axes=(-2,-1))
-    output_images, recon_images = reconprep_images(data, oversampled_images,header)
-    return output_images, recon_images
+    output_images, recon_images, oversampled_images = reconprep_images(data, oversampled_images,header)
+    return output_images, recon_images, oversampled_images
 
 class ExternalNode(gpi.NodeAPI):
     """This is a GPI node template.
@@ -116,6 +116,7 @@ class ExternalNode(gpi.NodeAPI):
         self.addInPort('data', 'NPYarray', dtype=np.complex64, ndim=5)
         self.addInPort('header', 'DICT')
         self.addOutPort('output_images', 'NPYarray', dtype=np.complex128, ndim=5)
+        self.addOutPort('oversampled_images', 'NPYarray', dtype=np.complex128, ndim=5)
 
 
     # validate the data - runs immediately before compute
@@ -138,7 +139,7 @@ class ExternalNode(gpi.NodeAPI):
         data = self.getData('data')
         header = self.getData('header')
 
-        output_images, recon_images = compute_from_args(data,header)
+        output_images, recon_images, oversampled_images = compute_from_args(data,header)
         # TODO: process the data
         # [your code here]
         recon_format = self.getVal('recon_format')
@@ -148,6 +149,7 @@ class ExternalNode(gpi.NodeAPI):
             out = output_images
 
         self.setData('output_images', out)
+        self.setData('oversampled_images', oversampled_images)
 
         return 0
 
