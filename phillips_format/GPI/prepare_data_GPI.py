@@ -6,6 +6,12 @@ import gpi
 # Documentation for the node API can be found online:
 # http://docs.gpilab.com/NodeAPI
 
+def DC_offset_correction(data,noise):
+    corrected_data = np.zeros(data.shape,dtype=data.dtype)
+    for i in range(noise.shape[0]):
+        offset_value = np.mean(noise[i,:])
+        corrected_data[i] = data[i]-offset_value
+    return corrected_data
 
 def oversampled_kspace_from_scan(data, header):
     # get the line positions
@@ -109,11 +115,13 @@ class ExternalNode(gpi.NodeAPI):
         # self.addWidget('SpinBox', 'foo', val=10, min=0, max=100)
         # self.addWidget('DoubleSpinBox', 'bar', val=10, min=0, max=100)
         self.addWidget('PushButton', 'recon_format', toggle=True)
+        self.addWidget('PushButton', 'DcOffsetCorrection', toggle=True)
         # self.addWidget('ExclusivePushButtons', 'qux',
         #              buttons=['Antoine', 'Colby', 'Trotter', 'Adair'], val=1)
 
         # IO Ports
         self.addInPort('data', 'NPYarray', dtype=np.complex64, ndim=5)
+        self.addInPort('noise', 'NPYarray', dtype=np.complex64, ndim=2)
         self.addInPort('header', 'DICT')
         self.addOutPort('output_images', 'NPYarray', dtype=np.complex128, ndim=5)
         self.addOutPort('oversampled_images', 'NPYarray', dtype=np.complex128, ndim=5)
@@ -126,6 +134,7 @@ class ExternalNode(gpi.NodeAPI):
     def validate(self):
         in_data = self.getData('data')
         in_header = self.getData('header')
+        in_noise = self.getData('noise')
 
         # TODO: make sure the input data is valid
         # [your code here]
@@ -138,7 +147,9 @@ class ExternalNode(gpi.NodeAPI):
     def compute(self):
         data = self.getData('data')
         header = self.getData('header')
-
+        noise = self.getData('noise')
+        if self.getVal('DcOffsetCorrection'):
+            data = DC_offset_correction(data,noise)
         output_images, recon_images, oversampled_images = compute_from_args(data,header)
         # TODO: process the data
         # [your code here]
@@ -157,6 +168,23 @@ if __name__=='__main__':
 
     import pickle
     import numpy as np
-    data = np.load(r'C:/Users/touquet/Desktop/for gpi/data.npy')
-    header = pickle.load(open(r'C:\Users\touquet\Desktop\for gpi\header.pickle','rb'))
+    data = np.load(r'C:/Users/touquet/Desktop/for gpi/20210127_162451_QFLOW_Ao__data.npy')
+    header = pickle.load(open(r'C:/Users/touquet/Desktop/for gpi/20210127_162451_QFLOW_Ao__header.pickle','rb'))
+    noise = np.load(r'C:/Users/touquet/Desktop/for gpi/20210127_162451_QFLOW_Ao__noise.npy')
+    data = DC_offset_correction(data,noise)
     test = compute_from_args(data,header)
+
+#corrections to add:
+#randomphasecorrection, correct phase from lab values
+#pdacorrection, check for amplification factors?
+#dcoffset correction, from noise data, calculate the mean and substract it from data
+#measphase, see if information is stored in header 
+#ringingfilter, see what a hamming filter is, default parameter value is 0.25 (25% edge value????)
+#EPIphase, see if epi correction profiles are available in the data
+#all gridding correction depend if non-cartesian
+#partialfourier uses kspace symetries is it relevant?
+#concomitant, only for phase, parameters should be given, see reconframe?
+#coil combination
+#geometry corrections?
+#flowphasecorrection - not explained?
+#
