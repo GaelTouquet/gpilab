@@ -168,10 +168,10 @@ if __name__=='__main__':
 
     import pickle
     import numpy as np
-    data = np.load(r'C:/Users/touquet/Desktop/for gpi/20210127_162451_QFLOW_Ao__data.npy')
-    header = pickle.load(open(r'C:/Users/touquet/Desktop/for gpi/20210127_162451_QFLOW_Ao__header.pickle','rb'))
-    noise = np.load(r'C:/Users/touquet/Desktop/for gpi/20210127_162451_QFLOW_Ao__noise.npy')
-    data = DC_offset_correction(data,noise)
+    data = np.load(r'/home/touquet/MRIData_tmp/20210127_162451_QFLOW_Ao__data.npy')
+    header = pickle.load(open(r'/home/touquet/MRIData_tmp/20210127_162451_QFLOW_Ao__header.pickle','rb'))
+    noise = np.load(r'/home/touquet/MRIData_tmp/20210127_162451_QFLOW_Ao__noise.npy')
+    # data = DC_offset_correction(data,noise)
     test = compute_from_args(data,header)
 
 #corrections to add:
