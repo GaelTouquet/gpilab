@@ -1,0 +1,5155 @@
+# This file was written with GPI v1.3.0 using Network v3. Do not edit this line.
+{
+ "DATETIME": "Tue May 18 13:46:20 2021",
+ "GPI_VERSION": "1.3.0",
+ "HEADER": "This is a GPI Network File",
+ "NETWORK_VERSION": "3",
+ "PLATFORM": {
+  "HOSTNAME": "eq12-ms-722",
+  "NUM_CPUS": 28,
+  "OS": "Linux",
+  "PLATFORM": "Linux-5.4.72-microsoft-standard-WSL2-x86_64-with-debian-bullseye-sid",
+  "PYTHON": "CPython",
+  "PYTHON_VERSION": "3.7.8",
+  "TOTAL_PHYMEM": 107767128064,
+  "TOTAL_PHYMEM_STR": "100.37 GB"
+ },
+ "TOTAL_PMEM": "9430523320",
+ "WALLTIME": "0.0002560615539550781",
+ "layouts": [],
+ "nodes": {
+  "macroNodes": [],
+  "nodes": [
+   {
+    "avgwalltime": "0.0025326013565063477",
+    "id": 140627366391888,
+    "key": "gpi_core.display.ImageDisplay",
+    "name": "ImageDisplay",
+    "ports": [
+     {
+      "connections": [
+       {
+        "dest": {
+         "nodeID": 140627366391888,
+         "portID": 140627366439184,
+         "portName": "in",
+         "portNum": 0
+        },
+        "src": {
+         "nodeID": 140627368827152,
+         "portID": 140627368143280,
+         "portName": "out",
+         "portNum": 0
+        }
+       }
+      ],
+      "id": 140627366439184,
+      "obligation": 100,
+      "portnum": 0,
+      "porttitle": "in",
+      "porttype": 65540,
+      "widgetTitle": null
+     },
+     {
+      "connections": [],
+      "id": 140627366439344,
+      "obligation": null,
+      "portnum": 0,
+      "porttitle": "out",
+      "porttype": 65541,
+      "widgetTitle": null
+     },
+     {
+      "connections": [],
+      "id": 140627366439504,
+      "obligation": null,
+      "portnum": 1,
+      "porttitle": "temp",
+      "porttype": 65541,
+      "widgetTitle": null
+     }
+    ],
+    "pos": [
+     109.57142857142856,
+     46.142857142857146
+    ],
+    "stdwalltime": "0.00017845630645751953",
+    "walltime": "0.002354145050048828",
+    "widget_settings": {
+     "label": "",
+     "parms": [
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627366394928,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": 2,
+        "visible": true
+       },
+       "name": "Complex Display",
+       "type": "<class 'gpi.widgets.ExclusivePushButtons'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": true,
+        "id": 140627366395728,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": 0,
+        "visible": true
+       },
+       "name": "Color Map",
+       "type": "<class 'gpi.widgets.ExclusivePushButtons'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627366372528,
+        "immediate": false,
+        "inport": false,
+        "label": "",
+        "max": 2147483647,
+        "min": 0,
+        "outport": false,
+        "quietval": null,
+        "singlestep": 1,
+        "val": 0,
+        "visible": false,
+        "wrapping": false
+       },
+       "name": "Edge Pixels",
+       "type": "<class 'gpi.widgets.SpinBox'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627366373488,
+        "immediate": false,
+        "inport": false,
+        "label": "",
+        "max": 2147483647,
+        "min": 0,
+        "outport": false,
+        "quietval": null,
+        "singlestep": 1,
+        "val": 0,
+        "visible": false,
+        "wrapping": false
+       },
+       "name": "Black Pixels",
+       "type": "<class 'gpi.widgets.SpinBox'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": true,
+        "id": 140627366374448,
+        "inport": false,
+        "interp": false,
+        "line": null,
+        "noscroll": true,
+        "outport": false,
+        "points": null,
+        "quietval": null,
+        "scale": 1.0,
+        "val": null,
+        "visible": true
+       },
+       "name": "Viewport:",
+       "type": "<class 'gpi.widgets.DisplayBox'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627366403120,
+        "inport": false,
+        "max": 100,
+        "min": 1,
+        "outport": false,
+        "quietval": null,
+        "val": 1,
+        "visible": false
+       },
+       "name": "Slice",
+       "type": "<class 'gpi.widgets.Slider'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627366424976,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": 0,
+        "visible": false
+       },
+       "name": "Slice/Tile Dimension",
+       "type": "<class 'gpi.widgets.ExclusivePushButtons'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627366425776,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": 0,
+        "visible": false
+       },
+       "name": "Extra Dimension",
+       "type": "<class 'gpi.widgets.ExclusivePushButtons'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627366426576,
+        "immediate": false,
+        "inport": false,
+        "label": "",
+        "max": 2147483647,
+        "min": -2147483648,
+        "outport": false,
+        "quietval": null,
+        "singlestep": 1,
+        "val": 1,
+        "visible": false,
+        "wrapping": false
+       },
+       "name": "# Columns",
+       "type": "<class 'gpi.widgets.SpinBox'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627366427536,
+        "immediate": false,
+        "inport": false,
+        "label": "",
+        "max": 2147483647,
+        "min": -2147483648,
+        "outport": false,
+        "quietval": null,
+        "singlestep": 1,
+        "val": 1,
+        "visible": false,
+        "wrapping": false
+       },
+       "name": "# Rows",
+       "type": "<class 'gpi.widgets.SpinBox'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": true,
+        "id": 140627366428496,
+        "inport": false,
+        "max": 100,
+        "min": 0,
+        "outport": false,
+        "quietval": null,
+        "val": {
+         "ceiling": 100,
+         "floor": 0,
+         "level": 50,
+         "window": 100
+        },
+        "visible": true
+       },
+       "name": "L W F C:",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/display/GPI/ImageDisplay_GPI.WindowLevel'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627366433648,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": 0,
+        "visible": true
+       },
+       "name": "Scalar Display",
+       "type": "<class 'gpi.widgets.ExclusivePushButtons'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "decimals": 3,
+        "id": 140627366434448,
+        "immediate": false,
+        "inport": false,
+        "label": "",
+        "max": 10.0,
+        "min": 0.1,
+        "outport": false,
+        "quietval": null,
+        "singlestep": 0.05,
+        "val": 1.0,
+        "visible": true,
+        "wrapping": false
+       },
+       "name": "Gamma",
+       "type": "<class 'gpi.widgets.DoubleSpinBox'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627366435408,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": 0,
+        "visible": true
+       },
+       "name": "Zero Ref",
+       "type": "<class 'gpi.widgets.ExclusivePushButtons'>"
+      },
+      {
+       "kwargs": {
+        "button_title": "Auto-Range On",
+        "collapsed": false,
+        "id": 140627366436368,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "toggle": true,
+        "val": false,
+        "visible": true
+       },
+       "name": "Fix Range",
+       "type": "<class 'gpi.widgets.PushButton'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "decimals": 2,
+        "id": 140627366437264,
+        "immediate": false,
+        "inport": false,
+        "label": "",
+        "max": 1.7976931348623157e+308,
+        "min": -1.7976931348623157e+308,
+        "outport": false,
+        "quietval": null,
+        "singlestep": 1.0,
+        "val": 0.0,
+        "visible": true,
+        "wrapping": false
+       },
+       "name": "Range Min",
+       "type": "<class 'gpi.widgets.DoubleSpinBox'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "decimals": 2,
+        "id": 140627366438224,
+        "immediate": false,
+        "inport": false,
+        "label": "",
+        "max": 1.7976931348623157e+308,
+        "min": -1.7976931348623157e+308,
+        "outport": false,
+        "quietval": null,
+        "singlestep": 1.0,
+        "val": 0.0,
+        "visible": true,
+        "wrapping": false
+       },
+       "name": "Range Max",
+       "type": "<class 'gpi.widgets.DoubleSpinBox'>"
+      }
+     ]
+    }
+   },
+   {
+    "avgwalltime": "3.0293930768966675",
+    "id": 140627366416624,
+    "key": "gpi_core.math.Collapse",
+    "name": "Collapse",
+    "ports": [
+     {
+      "connections": [
+       {
+        "dest": {
+         "nodeID": 140627366416624,
+         "portID": 140627366351728,
+         "portName": "in",
+         "portNum": 0
+        },
+        "src": {
+         "nodeID": 140627365850480,
+         "portID": 140627365854736,
+         "portName": "output_images",
+         "portNum": 0
+        }
+       }
+      ],
+      "id": 140627366351728,
+      "obligation": 100,
+      "portnum": 0,
+      "porttitle": "in",
+      "porttype": 65540,
+      "widgetTitle": null
+     },
+     {
+      "connections": [
+       {
+        "dest": {
+         "nodeID": 140627366784368,
+         "portID": 140627368631664,
+         "portName": "in",
+         "portNum": 0
+        },
+        "src": {
+         "nodeID": 140627366416624,
+         "portID": 140627366351888,
+         "portName": "Collapse Single Dim",
+         "portNum": 0
+        }
+       }
+      ],
+      "id": 140627366351888,
+      "obligation": null,
+      "portnum": 0,
+      "porttitle": "Collapse Single Dim",
+      "porttype": 65541,
+      "widgetTitle": null
+     },
+     {
+      "connections": [],
+      "id": 140627366352048,
+      "obligation": null,
+      "portnum": 1,
+      "porttitle": "Collapse All Dims",
+      "porttype": 65541,
+      "widgetTitle": null
+     },
+     {
+      "connections": [],
+      "id": 140627366352208,
+      "obligation": null,
+      "portnum": 2,
+      "porttitle": "Max Val Index",
+      "porttype": 65541,
+      "widgetTitle": null
+     }
+    ],
+    "pos": [
+     139.57142857142856,
+     -72.85714285714286
+    ],
+    "stdwalltime": "0.030050158500671387",
+    "walltime": "2.999342918395996",
+    "widget_settings": {
+     "label": "",
+     "parms": [
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627366419664,
+        "inport": false,
+        "openExternalLinks": false,
+        "outport": false,
+        "quietval": null,
+        "val": "Ready",
+        "visible": true,
+        "wordwrap": false
+       },
+       "name": "Status",
+       "type": "<class 'gpi.widgets.TextBox'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627366420144,
+        "inport": false,
+        "openExternalLinks": false,
+        "outport": false,
+        "quietval": null,
+        "val": "input: (24, 24, 2, 256, 256)\noutput: (24, 2, 256, 256)",
+        "visible": true,
+        "wordwrap": false
+       },
+       "name": "Info",
+       "type": "<class 'gpi.widgets.TextBox'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627366342896,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": 5,
+        "visible": true
+       },
+       "name": "Operation",
+       "type": "<class 'gpi.widgets.ExclusiveRadioButtons'>"
+      },
+      {
+       "kwargs": {
+        "button_title": "",
+        "collapsed": false,
+        "id": 140627366345136,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "toggle": true,
+        "val": true,
+        "visible": true
+       },
+       "name": "Compute",
+       "type": "<class 'gpi.widgets.PushButton'>"
+      },
+      {
+       "kwargs": {
+        "button_title": "",
+        "collapsed": false,
+        "id": 140627366345776,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "toggle": true,
+        "val": false,
+        "visible": true
+       },
+       "name": "Collapse All",
+       "type": "<class 'gpi.widgets.PushButton'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627366346576,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": 4,
+        "visible": true
+       },
+       "name": "Dimension",
+       "type": "<class 'gpi.widgets.ExclusivePushButtons'>"
+      },
+      {
+       "kwargs": {
+        "button_title": "",
+        "collapsed": false,
+        "id": 140627366314864,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "toggle": true,
+        "val": true,
+        "visible": true
+       },
+       "name": "Span Entire Dimension",
+       "type": "<class 'gpi.widgets.PushButton'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627366315664,
+        "inport": false,
+        "max": 24,
+        "min": 0,
+        "outport": false,
+        "quietval": null,
+        "val": 0,
+        "visible": false
+       },
+       "name": "Dimension Start_Index",
+       "type": "<class 'gpi.widgets.Slider'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627366316944,
+        "inport": false,
+        "max": 24,
+        "min": 0,
+        "outport": false,
+        "quietval": null,
+        "val": 0,
+        "visible": false
+       },
+       "name": "Dimension Stop_Index",
+       "type": "<class 'gpi.widgets.Slider'>"
+      },
+      {
+       "kwargs": {
+        "button_title": "",
+        "collapsed": false,
+        "id": 140627366280880,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "toggle": true,
+        "val": false,
+        "visible": true
+       },
+       "name": "Non-Zero",
+       "type": "<class 'gpi.widgets.PushButton'>"
+      }
+     ]
+    }
+   },
+   {
+    "avgwalltime": "0.16062521934509277",
+    "id": 140627368827152,
+    "key": "gpi_core.shapers.Reduce",
+    "name": "Reduce",
+    "ports": [
+     {
+      "connections": [
+       {
+        "dest": {
+         "nodeID": 140627368827152,
+         "portID": 140627368143120,
+         "portName": "in",
+         "portNum": 0
+        },
+        "src": {
+         "nodeID": 140627368727888,
+         "portID": 140627368761616,
+         "portName": "out",
+         "portNum": 0
+        }
+       }
+      ],
+      "id": 140627368143120,
+      "obligation": 100,
+      "portnum": 0,
+      "porttitle": "in",
+      "porttype": 65540,
+      "widgetTitle": null
+     },
+     {
+      "connections": [
+       {
+        "dest": {
+         "nodeID": 140627366391888,
+         "portID": 140627366439184,
+         "portName": "in",
+         "portNum": 0
+        },
+        "src": {
+         "nodeID": 140627368827152,
+         "portID": 140627368143280,
+         "portName": "out",
+         "portNum": 0
+        }
+       }
+      ],
+      "id": 140627368143280,
+      "obligation": null,
+      "portnum": 0,
+      "porttitle": "out",
+      "porttype": 65541,
+      "widgetTitle": null
+     },
+     {
+      "connections": [],
+      "id": 140627368143440,
+      "obligation": null,
+      "portnum": 1,
+      "porttitle": "mask",
+      "porttype": 65541,
+      "widgetTitle": null
+     }
+    ],
+    "pos": [
+     44.571428571428555,
+     9.142857142857146
+    ],
+    "stdwalltime": "0.0035004615783691406",
+    "walltime": "0.16412568092346191",
+    "widget_settings": {
+     "label": "",
+     "parms": [
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627368867152,
+        "inport": false,
+        "openExternalLinks": false,
+        "outport": false,
+        "quietval": null,
+        "val": "input: (1, 256, 256, 24)\noutput: (256, 256)",
+        "visible": true,
+        "wordwrap": false
+       },
+       "name": "I/O Info:",
+       "type": "<class 'gpi.widgets.TextBox'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627368867632,
+        "inport": false,
+        "max": 24,
+        "min": 1,
+        "outport": false,
+        "quietmax": null,
+        "quietval": null,
+        "val": {
+         "ceiling": 19,
+         "center": 19,
+         "floor": 19,
+         "selection": 2,
+         "width": 1
+        },
+        "visible": true
+       },
+       "name": "Dimension[-1]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/shapers/GPI/Reduce_GPI.ReduceSliders'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627368065936,
+        "inport": false,
+        "max": 256,
+        "min": 1,
+        "outport": false,
+        "quietmax": null,
+        "quietval": null,
+        "val": {
+         "ceiling": 256,
+         "center": 129,
+         "floor": 1,
+         "selection": 3,
+         "width": 256
+        },
+        "visible": true
+       },
+       "name": "Dimension[-2]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/shapers/GPI/Reduce_GPI.ReduceSliders'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627368075344,
+        "inport": false,
+        "max": 256,
+        "min": 1,
+        "outport": false,
+        "quietmax": null,
+        "quietval": null,
+        "val": {
+         "ceiling": 256,
+         "center": 129,
+         "floor": 1,
+         "selection": 3,
+         "width": 256
+        },
+        "visible": true
+       },
+       "name": "Dimension[-3]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/shapers/GPI/Reduce_GPI.ReduceSliders'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627368080400,
+        "inport": false,
+        "max": 1,
+        "min": 1,
+        "outport": false,
+        "quietmax": null,
+        "quietval": null,
+        "val": {
+         "ceiling": 1,
+         "center": 1,
+         "floor": 1,
+         "selection": 2,
+         "width": 1
+        },
+        "visible": true
+       },
+       "name": "Dimension[-4]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/shapers/GPI/Reduce_GPI.ReduceSliders'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627368110352,
+        "inport": false,
+        "max": 100,
+        "min": 1,
+        "outport": false,
+        "quietmax": null,
+        "quietval": null,
+        "val": {
+         "ceiling": 100,
+         "center": 51,
+         "floor": 1,
+         "selection": 3,
+         "width": 100
+        },
+        "visible": false
+       },
+       "name": "Dimension[-5]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/shapers/GPI/Reduce_GPI.ReduceSliders'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627368090992,
+        "inport": false,
+        "max": 100,
+        "min": 1,
+        "outport": false,
+        "quietmax": null,
+        "quietval": null,
+        "val": {
+         "ceiling": 100,
+         "center": 51,
+         "floor": 1,
+         "selection": 3,
+         "width": 100
+        },
+        "visible": false
+       },
+       "name": "Dimension[-6]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/shapers/GPI/Reduce_GPI.ReduceSliders'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627368104496,
+        "inport": false,
+        "max": 100,
+        "min": 1,
+        "outport": false,
+        "quietmax": null,
+        "quietval": null,
+        "val": {
+         "ceiling": 100,
+         "center": 51,
+         "floor": 1,
+         "selection": 3,
+         "width": 100
+        },
+        "visible": false
+       },
+       "name": "Dimension[-7]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/shapers/GPI/Reduce_GPI.ReduceSliders'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627368117744,
+        "inport": false,
+        "max": 100,
+        "min": 1,
+        "outport": false,
+        "quietmax": null,
+        "quietval": null,
+        "val": {
+         "ceiling": 100,
+         "center": 51,
+         "floor": 1,
+         "selection": 3,
+         "width": 100
+        },
+        "visible": false
+       },
+       "name": "Dimension[-8]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/shapers/GPI/Reduce_GPI.ReduceSliders'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627368127216,
+        "inport": false,
+        "max": 100,
+        "min": 1,
+        "outport": false,
+        "quietmax": null,
+        "quietval": null,
+        "val": {
+         "ceiling": 100,
+         "center": 51,
+         "floor": 1,
+         "selection": 3,
+         "width": 100
+        },
+        "visible": false
+       },
+       "name": "Dimension[-9]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/shapers/GPI/Reduce_GPI.ReduceSliders'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627368131792,
+        "inport": false,
+        "max": 100,
+        "min": 1,
+        "outport": false,
+        "quietmax": null,
+        "quietval": null,
+        "val": {
+         "ceiling": 100,
+         "center": 51,
+         "floor": 1,
+         "selection": 3,
+         "width": 100
+        },
+        "visible": false
+       },
+       "name": "Dimension[-10]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/shapers/GPI/Reduce_GPI.ReduceSliders'>"
+      },
+      {
+       "kwargs": {
+        "button_title": "",
+        "collapsed": false,
+        "id": 140627368141520,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "toggle": true,
+        "val": false,
+        "visible": true
+       },
+       "name": "Mask",
+       "type": "<class 'gpi.widgets.PushButton'>"
+      },
+      {
+       "kwargs": {
+        "button_title": "",
+        "collapsed": false,
+        "id": 140627368142320,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "toggle": true,
+        "val": true,
+        "visible": true
+       },
+       "name": "Compute",
+       "type": "<class 'gpi.widgets.PushButton'>"
+      }
+     ]
+    }
+   },
+   {
+    "avgwalltime": "0.279060959815979",
+    "id": 140627365310864,
+    "key": "gpi_core.math.FFTW",
+    "name": "FFTW",
+    "ports": [
+     {
+      "connections": [
+       {
+        "dest": {
+         "nodeID": 140627365310864,
+         "portID": 140627365386192,
+         "portName": "in",
+         "portNum": 0
+        },
+        "src": {
+         "nodeID": 140627368727888,
+         "portID": 140627368761616,
+         "portName": "out",
+         "portNum": 0
+        }
+       }
+      ],
+      "id": 140627365386192,
+      "obligation": 100,
+      "portnum": 0,
+      "porttitle": "in",
+      "porttype": 65540,
+      "widgetTitle": null
+     },
+     {
+      "connections": [
+       {
+        "dest": {
+         "nodeID": 140627364136112,
+         "portID": 140627364145904,
+         "portName": "kspace",
+         "portNum": 0
+        },
+        "src": {
+         "nodeID": 140627365310864,
+         "portID": 140627365386352,
+         "portName": "out",
+         "portNum": 0
+        }
+       }
+      ],
+      "id": 140627365386352,
+      "obligation": null,
+      "portnum": 0,
+      "porttitle": "out",
+      "porttype": 65541,
+      "widgetTitle": null
+     }
+    ],
+    "pos": [
+     -259.42857142857144,
+     2.142857142857146
+    ],
+    "stdwalltime": "0.00813591480255127",
+    "walltime": "0.27092504501342773",
+    "widget_settings": {
+     "label": "",
+     "parms": [
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627365311664,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": {
+         "compute": false,
+         "in_len": 24,
+         "length": 24
+        },
+        "visible": true
+       },
+       "name": "Dimension[-1]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/math/GPI/FFTW_GPI.FFTW_GROUP'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627365406352,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": {
+         "compute": true,
+         "in_len": 256,
+         "length": 256
+        },
+        "visible": true
+       },
+       "name": "Dimension[-2]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/math/GPI/FFTW_GPI.FFTW_GROUP'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627365408432,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": {
+         "compute": true,
+         "in_len": 256,
+         "length": 256
+        },
+        "visible": true
+       },
+       "name": "Dimension[-3]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/math/GPI/FFTW_GPI.FFTW_GROUP'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627365345072,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": {
+         "compute": false,
+         "in_len": 1,
+         "length": 1
+        },
+        "visible": true
+       },
+       "name": "Dimension[-4]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/math/GPI/FFTW_GPI.FFTW_GROUP'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627365347152,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": {
+         "compute": false,
+         "in_len": 24,
+         "length": 24
+        },
+        "visible": false
+       },
+       "name": "Dimension[-5]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/math/GPI/FFTW_GPI.FFTW_GROUP'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627365353424,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": {
+         "compute": false,
+         "in_len": 1,
+         "length": 1
+        },
+        "visible": false
+       },
+       "name": "Dimension[-6]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/math/GPI/FFTW_GPI.FFTW_GROUP'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627365364432,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": {
+         "compute": false,
+         "in_len": 1,
+         "length": 1
+        },
+        "visible": false
+       },
+       "name": "Dimension[-7]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/math/GPI/FFTW_GPI.FFTW_GROUP'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627365365712,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": {
+         "compute": false,
+         "in_len": 1,
+         "length": 1
+        },
+        "visible": false
+       },
+       "name": "Dimension[-8]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/math/GPI/FFTW_GPI.FFTW_GROUP'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627365380336,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": {
+         "compute": false,
+         "in_len": 1,
+         "length": 1
+        },
+        "visible": false
+       },
+       "name": "Dimension[-9]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/math/GPI/FFTW_GPI.FFTW_GROUP'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627365382416,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": {
+         "compute": false,
+         "in_len": 1,
+         "length": 1
+        },
+        "visible": false
+       },
+       "name": "Dimension[-10]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/math/GPI/FFTW_GPI.FFTW_GROUP'>"
+      },
+      {
+       "kwargs": {
+        "button_title": "",
+        "collapsed": false,
+        "id": 140627365384592,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "toggle": true,
+        "val": false,
+        "visible": true
+       },
+       "name": "inverse",
+       "type": "<class 'gpi.widgets.PushButton'>"
+      },
+      {
+       "kwargs": {
+        "button_title": "",
+        "collapsed": false,
+        "id": 140627365385392,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "toggle": true,
+        "val": true,
+        "visible": true
+       },
+       "name": "compute",
+       "type": "<class 'gpi.widgets.PushButton'>"
+      }
+     ]
+    }
+   },
+   {
+    "avgwalltime": "0.24144113063812256",
+    "id": 140627367664048,
+    "key": "gpi_core.shapers.Reduce",
+    "name": "Reduce",
+    "ports": [
+     {
+      "connections": [
+       {
+        "dest": {
+         "nodeID": 140627367664048,
+         "portID": 140627367721552,
+         "portName": "in",
+         "portNum": 0
+        },
+        "src": {
+         "nodeID": 140627365850480,
+         "portID": 140627365854736,
+         "portName": "output_images",
+         "portNum": 0
+        }
+       }
+      ],
+      "id": 140627367721552,
+      "obligation": 100,
+      "portnum": 0,
+      "porttitle": "in",
+      "porttype": 65540,
+      "widgetTitle": null
+     },
+     {
+      "connections": [
+       {
+        "dest": {
+         "nodeID": 140627368727888,
+         "portID": 140627368761456,
+         "portName": "in",
+         "portNum": 0
+        },
+        "src": {
+         "nodeID": 140627367664048,
+         "portID": 140627367721712,
+         "portName": "out",
+         "portNum": 0
+        }
+       }
+      ],
+      "id": 140627367721712,
+      "obligation": null,
+      "portnum": 0,
+      "porttitle": "out",
+      "porttype": 65541,
+      "widgetTitle": null
+     },
+     {
+      "connections": [],
+      "id": 140627367721872,
+      "obligation": null,
+      "portnum": 1,
+      "porttitle": "mask",
+      "porttype": 65541,
+      "widgetTitle": null
+     }
+    ],
+    "pos": [
+     -97.42857142857144,
+     -58.857142857142854
+    ],
+    "stdwalltime": "0.008231282234191895",
+    "walltime": "0.23320984840393066",
+    "widget_settings": {
+     "label": "",
+     "parms": [
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627367646544,
+        "inport": false,
+        "openExternalLinks": false,
+        "outport": false,
+        "quietval": null,
+        "val": "input: (24, 24, 2, 256, 256)\noutput: (24, 1, 256, 256)",
+        "visible": true,
+        "wordwrap": false
+       },
+       "name": "I/O Info:",
+       "type": "<class 'gpi.widgets.TextBox'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627367647024,
+        "inport": false,
+        "max": 256,
+        "min": 1,
+        "outport": false,
+        "quietmax": null,
+        "quietval": null,
+        "val": {
+         "ceiling": 256,
+         "center": 129,
+         "floor": 1,
+         "selection": 3,
+         "width": 256
+        },
+        "visible": true
+       },
+       "name": "Dimension[-1]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/shapers/GPI/Reduce_GPI.ReduceSliders'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627367623568,
+        "inport": false,
+        "max": 256,
+        "min": 1,
+        "outport": false,
+        "quietmax": null,
+        "quietval": null,
+        "val": {
+         "ceiling": 256,
+         "center": 129,
+         "floor": 1,
+         "selection": 3,
+         "width": 256
+        },
+        "visible": true
+       },
+       "name": "Dimension[-2]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/shapers/GPI/Reduce_GPI.ReduceSliders'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627367632976,
+        "inport": false,
+        "max": 2,
+        "min": 1,
+        "outport": false,
+        "quietmax": null,
+        "quietval": null,
+        "val": {
+         "ceiling": 2,
+         "center": 2,
+         "floor": 2,
+         "selection": 1,
+         "width": 1
+        },
+        "visible": true
+       },
+       "name": "Dimension[-3]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/shapers/GPI/Reduce_GPI.ReduceSliders'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627367670800,
+        "inport": false,
+        "max": 24,
+        "min": 1,
+        "outport": false,
+        "quietmax": null,
+        "quietval": null,
+        "val": {
+         "ceiling": 13,
+         "center": 13,
+         "floor": 13,
+         "selection": 2,
+         "width": 1
+        },
+        "visible": true
+       },
+       "name": "Dimension[-4]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/shapers/GPI/Reduce_GPI.ReduceSliders'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627367696656,
+        "inport": false,
+        "max": 24,
+        "min": 1,
+        "outport": false,
+        "quietmax": null,
+        "quietval": null,
+        "val": {
+         "ceiling": 24,
+         "center": 13,
+         "floor": 1,
+         "selection": 3,
+         "width": 24
+        },
+        "visible": true
+       },
+       "name": "Dimension[-5]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/shapers/GPI/Reduce_GPI.ReduceSliders'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627367684528,
+        "inport": false,
+        "max": 100,
+        "min": 1,
+        "outport": false,
+        "quietmax": null,
+        "quietval": null,
+        "val": {
+         "ceiling": 100,
+         "center": 51,
+         "floor": 1,
+         "selection": 3,
+         "width": 100
+        },
+        "visible": false
+       },
+       "name": "Dimension[-6]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/shapers/GPI/Reduce_GPI.ReduceSliders'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627367703088,
+        "inport": false,
+        "max": 100,
+        "min": 1,
+        "outport": false,
+        "quietmax": null,
+        "quietval": null,
+        "val": {
+         "ceiling": 100,
+         "center": 51,
+         "floor": 1,
+         "selection": 3,
+         "width": 100
+        },
+        "visible": false
+       },
+       "name": "Dimension[-7]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/shapers/GPI/Reduce_GPI.ReduceSliders'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627367687824,
+        "inport": false,
+        "max": 100,
+        "min": 1,
+        "outport": false,
+        "quietmax": null,
+        "quietval": null,
+        "val": {
+         "ceiling": 100,
+         "center": 51,
+         "floor": 1,
+         "selection": 3,
+         "width": 100
+        },
+        "visible": false
+       },
+       "name": "Dimension[-8]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/shapers/GPI/Reduce_GPI.ReduceSliders'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627367701232,
+        "inport": false,
+        "max": 100,
+        "min": 1,
+        "outport": false,
+        "quietmax": null,
+        "quietval": null,
+        "val": {
+         "ceiling": 100,
+         "center": 51,
+         "floor": 1,
+         "selection": 3,
+         "width": 100
+        },
+        "visible": false
+       },
+       "name": "Dimension[-9]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/shapers/GPI/Reduce_GPI.ReduceSliders'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627367771984,
+        "inport": false,
+        "max": 100,
+        "min": 1,
+        "outport": false,
+        "quietmax": null,
+        "quietval": null,
+        "val": {
+         "ceiling": 100,
+         "center": 51,
+         "floor": 1,
+         "selection": 3,
+         "width": 100
+        },
+        "visible": false
+       },
+       "name": "Dimension[-10]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/shapers/GPI/Reduce_GPI.ReduceSliders'>"
+      },
+      {
+       "kwargs": {
+        "button_title": "",
+        "collapsed": false,
+        "id": 140627367719952,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "toggle": true,
+        "val": false,
+        "visible": true
+       },
+       "name": "Mask",
+       "type": "<class 'gpi.widgets.PushButton'>"
+      },
+      {
+       "kwargs": {
+        "button_title": "",
+        "collapsed": false,
+        "id": 140627367720752,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "toggle": true,
+        "val": true,
+        "visible": true
+       },
+       "name": "Compute",
+       "type": "<class 'gpi.widgets.PushButton'>"
+      }
+     ]
+    }
+   },
+   {
+    "avgwalltime": "0.0025290250778198242",
+    "id": 140627365401136,
+    "key": "gpi_core.display.ImageDisplay",
+    "name": "ImageDisplay",
+    "ports": [
+     {
+      "connections": [
+       {
+        "dest": {
+         "nodeID": 140627365401136,
+         "portID": 140627364956912,
+         "portName": "in",
+         "portNum": 0
+        },
+        "src": {
+         "nodeID": 140627366784368,
+         "portID": 140627368631824,
+         "portName": "out",
+         "portNum": 0
+        }
+       }
+      ],
+      "id": 140627364956912,
+      "obligation": 100,
+      "portnum": 0,
+      "porttitle": "in",
+      "porttype": 65540,
+      "widgetTitle": null
+     },
+     {
+      "connections": [],
+      "id": 140627364957072,
+      "obligation": null,
+      "portnum": 0,
+      "porttitle": "out",
+      "porttype": 65541,
+      "widgetTitle": null
+     },
+     {
+      "connections": [],
+      "id": 140627364957232,
+      "obligation": null,
+      "portnum": 1,
+      "porttitle": "temp",
+      "porttype": 65541,
+      "widgetTitle": null
+     }
+    ],
+    "pos": [
+     325.57142857142856,
+     86.14285714285714
+    ],
+    "stdwalltime": "0.00040709972381591797",
+    "walltime": "0.002936124801635742",
+    "widget_settings": {
+     "label": "",
+     "parms": [
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627365400976,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": 4,
+        "visible": false
+       },
+       "name": "Complex Display",
+       "type": "<class 'gpi.widgets.ExclusivePushButtons'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": true,
+        "id": 140627364967120,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": 0,
+        "visible": true
+       },
+       "name": "Color Map",
+       "type": "<class 'gpi.widgets.ExclusivePushButtons'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627364968400,
+        "immediate": false,
+        "inport": false,
+        "label": "",
+        "max": 2147483647,
+        "min": 0,
+        "outport": false,
+        "quietval": null,
+        "singlestep": 1,
+        "val": 0,
+        "visible": false,
+        "wrapping": false
+       },
+       "name": "Edge Pixels",
+       "type": "<class 'gpi.widgets.SpinBox'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627364969360,
+        "immediate": false,
+        "inport": false,
+        "label": "",
+        "max": 2147483647,
+        "min": 0,
+        "outport": false,
+        "quietval": null,
+        "singlestep": 1,
+        "val": 0,
+        "visible": false,
+        "wrapping": false
+       },
+       "name": "Black Pixels",
+       "type": "<class 'gpi.widgets.SpinBox'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": true,
+        "id": 140627364970320,
+        "inport": false,
+        "interp": false,
+        "line": null,
+        "noscroll": true,
+        "outport": false,
+        "points": null,
+        "quietval": null,
+        "scale": 1.0,
+        "val": null,
+        "visible": true
+       },
+       "name": "Viewport:",
+       "type": "<class 'gpi.widgets.DisplayBox'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627364921168,
+        "inport": false,
+        "max": 100,
+        "min": 1,
+        "outport": false,
+        "quietval": null,
+        "val": 1,
+        "visible": false
+       },
+       "name": "Slice",
+       "type": "<class 'gpi.widgets.Slider'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627365849680,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": 0,
+        "visible": false
+       },
+       "name": "Slice/Tile Dimension",
+       "type": "<class 'gpi.widgets.ExclusivePushButtons'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627364927120,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": 0,
+        "visible": false
+       },
+       "name": "Extra Dimension",
+       "type": "<class 'gpi.widgets.ExclusivePushButtons'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627364927920,
+        "immediate": false,
+        "inport": false,
+        "label": "",
+        "max": 2147483647,
+        "min": -2147483648,
+        "outport": false,
+        "quietval": null,
+        "singlestep": 1,
+        "val": 1,
+        "visible": false,
+        "wrapping": false
+       },
+       "name": "# Columns",
+       "type": "<class 'gpi.widgets.SpinBox'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627364928880,
+        "immediate": false,
+        "inport": false,
+        "label": "",
+        "max": 2147483647,
+        "min": -2147483648,
+        "outport": false,
+        "quietval": null,
+        "singlestep": 1,
+        "val": 1,
+        "visible": false,
+        "wrapping": false
+       },
+       "name": "# Rows",
+       "type": "<class 'gpi.widgets.SpinBox'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": true,
+        "id": 140627364946800,
+        "inport": false,
+        "max": 100,
+        "min": 0,
+        "outport": false,
+        "quietval": null,
+        "val": {
+         "ceiling": 100,
+         "floor": 0,
+         "level": 50,
+         "window": 100
+        },
+        "visible": true
+       },
+       "name": "L W F C:",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/display/GPI/ImageDisplay_GPI.WindowLevel'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627365393744,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": 0,
+        "visible": true
+       },
+       "name": "Scalar Display",
+       "type": "<class 'gpi.widgets.ExclusivePushButtons'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "decimals": 3,
+        "id": 140627365394544,
+        "immediate": false,
+        "inport": false,
+        "label": "",
+        "max": 10.0,
+        "min": 0.1,
+        "outport": false,
+        "quietval": null,
+        "singlestep": 0.05,
+        "val": 1.0,
+        "visible": true,
+        "wrapping": false
+       },
+       "name": "Gamma",
+       "type": "<class 'gpi.widgets.DoubleSpinBox'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627365395504,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": 0,
+        "visible": true
+       },
+       "name": "Zero Ref",
+       "type": "<class 'gpi.widgets.ExclusivePushButtons'>"
+      },
+      {
+       "kwargs": {
+        "button_title": "Auto-Range On",
+        "collapsed": false,
+        "id": 140627364954192,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "toggle": true,
+        "val": false,
+        "visible": true
+       },
+       "name": "Fix Range",
+       "type": "<class 'gpi.widgets.PushButton'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "decimals": 2,
+        "id": 140627364954992,
+        "immediate": false,
+        "inport": false,
+        "label": "",
+        "max": 1.7976931348623157e+308,
+        "min": -1.7976931348623157e+308,
+        "outport": false,
+        "quietval": null,
+        "singlestep": 1.0,
+        "val": 0.0,
+        "visible": true,
+        "wrapping": false
+       },
+       "name": "Range Min",
+       "type": "<class 'gpi.widgets.DoubleSpinBox'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "decimals": 2,
+        "id": 140627364955952,
+        "immediate": false,
+        "inport": false,
+        "label": "",
+        "max": 1.7976931348623157e+308,
+        "min": -1.7976931348623157e+308,
+        "outport": false,
+        "quietval": null,
+        "singlestep": 1.0,
+        "val": 0.0,
+        "visible": true,
+        "wrapping": false
+       },
+       "name": "Range Max",
+       "type": "<class 'gpi.widgets.DoubleSpinBox'>"
+      }
+     ]
+    }
+   },
+   {
+    "avgwalltime": "0.24075167829340155",
+    "id": 140627364530768,
+    "key": "gpi_core.shapers.Reduce",
+    "name": "Reduce",
+    "ports": [
+     {
+      "connections": [
+       {
+        "dest": {
+         "nodeID": 140627364530768,
+         "portID": 140627363888176,
+         "portName": "in",
+         "portNum": 0
+        },
+        "src": {
+         "nodeID": 140627364136112,
+         "portID": 140627364146064,
+         "portName": "sensitivities",
+         "portNum": 0
+        }
+       }
+      ],
+      "id": 140627363888176,
+      "obligation": 100,
+      "portnum": 0,
+      "porttitle": "in",
+      "porttype": 65540,
+      "widgetTitle": null
+     },
+     {
+      "connections": [
+       {
+        "dest": {
+         "nodeID": 140627367177744,
+         "portID": 140627364417360,
+         "portName": "in",
+         "portNum": 0
+        },
+        "src": {
+         "nodeID": 140627364530768,
+         "portID": 140627363888336,
+         "portName": "out",
+         "portNum": 0
+        }
+       },
+       {
+        "dest": {
+         "nodeID": 140627363935568,
+         "portID": 140627363923920,
+         "portName": "coil_maps",
+         "portNum": 1
+        },
+        "src": {
+         "nodeID": 140627364530768,
+         "portID": 140627363888336,
+         "portName": "out",
+         "portNum": 0
+        }
+       }
+      ],
+      "id": 140627363888336,
+      "obligation": null,
+      "portnum": 0,
+      "porttitle": "out",
+      "porttype": 65541,
+      "widgetTitle": null
+     },
+     {
+      "connections": [],
+      "id": 140627363888496,
+      "obligation": null,
+      "portnum": 1,
+      "porttitle": "mask",
+      "porttype": 65541,
+      "widgetTitle": null
+     }
+    ],
+    "pos": [
+     -55.428571428571445,
+     179.14285714285714
+    ],
+    "stdwalltime": "0.01212648245294576",
+    "walltime": "0.2630610466003418",
+    "widget_settings": {
+     "label": "",
+     "parms": [
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627364587632,
+        "inport": false,
+        "openExternalLinks": false,
+        "outport": false,
+        "quietval": null,
+        "val": "input: (1, 256, 256, 24)\noutput: (1, 256, 256, 24)",
+        "visible": true,
+        "wordwrap": false
+       },
+       "name": "I/O Info:",
+       "type": "<class 'gpi.widgets.TextBox'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627364588112,
+        "inport": false,
+        "max": 24,
+        "min": 1,
+        "outport": false,
+        "quietmax": null,
+        "quietval": null,
+        "val": {
+         "ceiling": 24,
+         "center": 13,
+         "floor": 1,
+         "selection": 3,
+         "width": 24
+        },
+        "visible": true
+       },
+       "name": "Dimension[-1]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/shapers/GPI/Reduce_GPI.ReduceSliders'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627364593328,
+        "inport": false,
+        "max": 256,
+        "min": 1,
+        "outport": false,
+        "quietmax": null,
+        "quietval": null,
+        "val": {
+         "ceiling": 256,
+         "center": 129,
+         "floor": 1,
+         "selection": 3,
+         "width": 256
+        },
+        "visible": true
+       },
+       "name": "Dimension[-2]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/shapers/GPI/Reduce_GPI.ReduceSliders'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627364606832,
+        "inport": false,
+        "max": 256,
+        "min": 1,
+        "outport": false,
+        "quietmax": null,
+        "quietval": null,
+        "val": {
+         "ceiling": 256,
+         "center": 129,
+         "floor": 1,
+         "selection": 3,
+         "width": 256
+        },
+        "visible": true
+       },
+       "name": "Dimension[-3]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/shapers/GPI/Reduce_GPI.ReduceSliders'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627364599760,
+        "inport": false,
+        "max": 1,
+        "min": 1,
+        "outport": false,
+        "quietmax": null,
+        "quietval": null,
+        "val": {
+         "ceiling": 1,
+         "center": 1,
+         "floor": 1,
+         "selection": 3,
+         "width": 1
+        },
+        "visible": true
+       },
+       "name": "Dimension[-4]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/shapers/GPI/Reduce_GPI.ReduceSliders'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627364633648,
+        "inport": false,
+        "max": 1,
+        "min": 1,
+        "outport": false,
+        "quietmax": null,
+        "quietval": null,
+        "val": {
+         "ceiling": 1,
+         "center": 1,
+         "floor": 1,
+         "selection": 3,
+         "width": 1
+        },
+        "visible": false
+       },
+       "name": "Dimension[-5]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/shapers/GPI/Reduce_GPI.ReduceSliders'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627364635344,
+        "inport": false,
+        "max": 100,
+        "min": 1,
+        "outport": false,
+        "quietmax": null,
+        "quietval": null,
+        "val": {
+         "ceiling": 100,
+         "center": 51,
+         "floor": 1,
+         "selection": 3,
+         "width": 100
+        },
+        "visible": false
+       },
+       "name": "Dimension[-6]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/shapers/GPI/Reduce_GPI.ReduceSliders'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627364644176,
+        "inport": false,
+        "max": 100,
+        "min": 1,
+        "outport": false,
+        "quietmax": null,
+        "quietval": null,
+        "val": {
+         "ceiling": 100,
+         "center": 51,
+         "floor": 1,
+         "selection": 3,
+         "width": 100
+        },
+        "visible": false
+       },
+       "name": "Dimension[-7]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/shapers/GPI/Reduce_GPI.ReduceSliders'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627367177424,
+        "inport": false,
+        "max": 100,
+        "min": 1,
+        "outport": false,
+        "quietmax": null,
+        "quietval": null,
+        "val": {
+         "ceiling": 100,
+         "center": 51,
+         "floor": 1,
+         "selection": 3,
+         "width": 100
+        },
+        "visible": false
+       },
+       "name": "Dimension[-8]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/shapers/GPI/Reduce_GPI.ReduceSliders'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627363986640,
+        "inport": false,
+        "max": 100,
+        "min": 1,
+        "outport": false,
+        "quietmax": null,
+        "quietval": null,
+        "val": {
+         "ceiling": 100,
+         "center": 51,
+         "floor": 1,
+         "selection": 3,
+         "width": 100
+        },
+        "visible": false
+       },
+       "name": "Dimension[-9]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/shapers/GPI/Reduce_GPI.ReduceSliders'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627363869072,
+        "inport": false,
+        "max": 100,
+        "min": 1,
+        "outport": false,
+        "quietmax": null,
+        "quietval": null,
+        "val": {
+         "ceiling": 100,
+         "center": 51,
+         "floor": 1,
+         "selection": 3,
+         "width": 100
+        },
+        "visible": false
+       },
+       "name": "Dimension[-10]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/shapers/GPI/Reduce_GPI.ReduceSliders'>"
+      },
+      {
+       "kwargs": {
+        "button_title": "",
+        "collapsed": false,
+        "id": 140627363886576,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "toggle": true,
+        "val": false,
+        "visible": true
+       },
+       "name": "Mask",
+       "type": "<class 'gpi.widgets.PushButton'>"
+      },
+      {
+       "kwargs": {
+        "button_title": "",
+        "collapsed": false,
+        "id": 140627363887376,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "toggle": true,
+        "val": true,
+        "visible": true
+       },
+       "name": "Compute",
+       "type": "<class 'gpi.widgets.PushButton'>"
+      }
+     ]
+    }
+   },
+   {
+    "avgwalltime": "4.746719479560852",
+    "id": 140627365901168,
+    "key": "gpi_core.math.FFTW",
+    "name": "FFTW",
+    "ports": [
+     {
+      "connections": [
+       {
+        "dest": {
+         "nodeID": 140627365901168,
+         "portID": 140627365287888,
+         "portName": "in",
+         "portNum": 0
+        },
+        "src": {
+         "nodeID": 140627362954288,
+         "portID": 140627366618928,
+         "portName": "oversampled_kspaces",
+         "portNum": 0
+        }
+       }
+      ],
+      "id": 140627365287888,
+      "obligation": 100,
+      "portnum": 0,
+      "porttitle": "in",
+      "porttype": 65540,
+      "widgetTitle": null
+     },
+     {
+      "connections": [
+       {
+        "dest": {
+         "nodeID": 140627365850480,
+         "portID": 140627365854416,
+         "portName": "images",
+         "portNum": 0
+        },
+        "src": {
+         "nodeID": 140627365901168,
+         "portID": 140627365288048,
+         "portName": "out",
+         "portNum": 0
+        }
+       }
+      ],
+      "id": 140627365288048,
+      "obligation": null,
+      "portnum": 0,
+      "porttitle": "out",
+      "porttype": 65541,
+      "widgetTitle": null
+     }
+    ],
+    "pos": [
+     -99.42857142857144,
+     -182.85714285714286
+    ],
+    "stdwalltime": "0.16441881656646729",
+    "walltime": "4.911138296127319",
+    "widget_settings": {
+     "label": "",
+     "parms": [
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627365202352,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": {
+         "compute": true,
+         "in_len": 512,
+         "length": 512
+        },
+        "visible": true
+       },
+       "name": "Dimension[-1]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/math/GPI/FFTW_GPI.FFTW_GROUP'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627365246608,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": {
+         "compute": true,
+         "in_len": 608,
+         "length": 608
+        },
+        "visible": true
+       },
+       "name": "Dimension[-2]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/math/GPI/FFTW_GPI.FFTW_GROUP'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627365248688,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": {
+         "compute": false,
+         "in_len": 2,
+         "length": 2
+        },
+        "visible": true
+       },
+       "name": "Dimension[-3]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/math/GPI/FFTW_GPI.FFTW_GROUP'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627365267088,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": {
+         "compute": false,
+         "in_len": 24,
+         "length": 24
+        },
+        "visible": true
+       },
+       "name": "Dimension[-4]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/math/GPI/FFTW_GPI.FFTW_GROUP'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627365269328,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": {
+         "compute": false,
+         "in_len": 24,
+         "length": 24
+        },
+        "visible": true
+       },
+       "name": "Dimension[-5]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/math/GPI/FFTW_GPI.FFTW_GROUP'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627365255120,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": {
+         "compute": false,
+         "in_len": 1,
+         "length": 1
+        },
+        "visible": false
+       },
+       "name": "Dimension[-6]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/math/GPI/FFTW_GPI.FFTW_GROUP'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627365273680,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": {
+         "compute": false,
+         "in_len": 1,
+         "length": 1
+        },
+        "visible": false
+       },
+       "name": "Dimension[-7]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/math/GPI/FFTW_GPI.FFTW_GROUP'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627365275760,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": {
+         "compute": false,
+         "in_len": 1,
+         "length": 1
+        },
+        "visible": false
+       },
+       "name": "Dimension[-8]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/math/GPI/FFTW_GPI.FFTW_GROUP'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627365323312,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": {
+         "compute": false,
+         "in_len": 1,
+         "length": 1
+        },
+        "visible": false
+       },
+       "name": "Dimension[-9]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/math/GPI/FFTW_GPI.FFTW_GROUP'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627365326672,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": {
+         "compute": false,
+         "in_len": 1,
+         "length": 1
+        },
+        "visible": false
+       },
+       "name": "Dimension[-10]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/math/GPI/FFTW_GPI.FFTW_GROUP'>"
+      },
+      {
+       "kwargs": {
+        "button_title": "",
+        "collapsed": false,
+        "id": 140627365286288,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "toggle": true,
+        "val": true,
+        "visible": true
+       },
+       "name": "inverse",
+       "type": "<class 'gpi.widgets.PushButton'>"
+      },
+      {
+       "kwargs": {
+        "button_title": "",
+        "collapsed": false,
+        "id": 140627365287088,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "toggle": true,
+        "val": true,
+        "visible": true
+       },
+       "name": "compute",
+       "type": "<class 'gpi.widgets.PushButton'>"
+      }
+     ]
+    }
+   },
+   {
+    "avgwalltime": "0.03589427471160889",
+    "id": 140627367779216,
+    "key": "gpi_core.fileIO.ReadNPY",
+    "name": "ReadNPY",
+    "ports": [
+     {
+      "connections": [
+       {
+        "dest": {
+         "nodeID": 140627362954288,
+         "portID": 140627366618448,
+         "portName": "data",
+         "portNum": 0
+        },
+        "src": {
+         "nodeID": 140627367779216,
+         "portID": 140627365560144,
+         "portName": "out",
+         "portNum": 0
+        }
+       }
+      ],
+      "id": 140627365560144,
+      "obligation": null,
+      "portnum": 0,
+      "porttitle": "out",
+      "porttype": 65541,
+      "widgetTitle": null
+     }
+    ],
+    "pos": [
+     -104.42857142857144,
+     -311.85714285714283
+    ],
+    "stdwalltime": "0.0009149312973022461",
+    "walltime": "0.03497934341430664",
+    "widget_settings": {
+     "label": "",
+     "parms": [
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627365558224,
+        "inport": false,
+        "openExternalLinks": false,
+        "outport": false,
+        "quietval": null,
+        "val": "created: 11/05/2021\naccessed: 18/05/2021\nmodified: 07/05/2021\nUID: 1000\nGID: 1000\nfile size (bytes): 106168448\ndimensions: [24, 24, 2, 48, 240]\ntype: complex64\n",
+        "visible": true,
+        "wordwrap": false
+       },
+       "name": "I/O Info:",
+       "type": "<class 'gpi.widgets.TextBox'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "directory": "/home/touquet/MRIData_tmp",
+        "id": 140627365558704,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": "/home/touquet/MRIData_tmp/20210127_162451_QFLOW_Ao__data.npy",
+        "visible": true
+       },
+       "name": "File Browser",
+       "type": "<class 'gpi.widgets.OpenFileBrowser'>"
+      },
+      {
+       "kwargs": {
+        "button_title": "",
+        "collapsed": false,
+        "id": 140627365559344,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "toggle": true,
+        "val": false,
+        "visible": true
+       },
+       "name": "Squeeze",
+       "type": "<class 'gpi.widgets.PushButton'>"
+      }
+     ]
+    }
+   },
+   {
+    "avgwalltime": "0.2948647737503052",
+    "id": 140627365532688,
+    "key": "gpi_core.math.FFTW",
+    "name": "FFTW",
+    "ports": [
+     {
+      "connections": [
+       {
+        "dest": {
+         "nodeID": 140627365532688,
+         "portID": 140627365604400,
+         "portName": "in",
+         "portNum": 0
+        },
+        "src": {
+         "nodeID": 140627368727888,
+         "portID": 140627368761616,
+         "portName": "out",
+         "portNum": 0
+        }
+       }
+      ],
+      "id": 140627365604400,
+      "obligation": 100,
+      "portnum": 0,
+      "porttitle": "in",
+      "porttype": 65540,
+      "widgetTitle": null
+     },
+     {
+      "connections": [
+       {
+        "dest": {
+         "nodeID": 140627363935568,
+         "portID": 140627363923760,
+         "portName": "kspace",
+         "portNum": 0
+        },
+        "src": {
+         "nodeID": 140627365532688,
+         "portID": 140627365604560,
+         "portName": "out",
+         "portNum": 0
+        }
+       }
+      ],
+      "id": 140627365604560,
+      "obligation": null,
+      "portnum": 0,
+      "porttitle": "out",
+      "porttype": 65541,
+      "widgetTitle": null
+     }
+    ],
+    "pos": [
+     17.571428571428555,
+     69.14285714285714
+    ],
+    "stdwalltime": "0.018268942832946777",
+    "walltime": "0.2765958309173584",
+    "widget_settings": {
+     "label": "",
+     "parms": [
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627365561040,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": {
+         "compute": false,
+         "in_len": 24,
+         "length": 24
+        },
+        "visible": true
+       },
+       "name": "Dimension[-1]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/math/GPI/FFTW_GPI.FFTW_GROUP'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627365563120,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": {
+         "compute": true,
+         "in_len": 256,
+         "length": 256
+        },
+        "visible": true
+       },
+       "name": "Dimension[-2]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/math/GPI/FFTW_GPI.FFTW_GROUP'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627365544816,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": {
+         "compute": true,
+         "in_len": 256,
+         "length": 256
+        },
+        "visible": true
+       },
+       "name": "Dimension[-3]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/math/GPI/FFTW_GPI.FFTW_GROUP'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627365546896,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": {
+         "compute": false,
+         "in_len": 1,
+         "length": 1
+        },
+        "visible": true
+       },
+       "name": "Dimension[-4]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/math/GPI/FFTW_GPI.FFTW_GROUP'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627365577744,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": {
+         "compute": false,
+         "in_len": 24,
+         "length": 24
+        },
+        "visible": false
+       },
+       "name": "Dimension[-5]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/math/GPI/FFTW_GPI.FFTW_GROUP'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627365579824,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": {
+         "compute": false,
+         "in_len": 1,
+         "length": 1
+        },
+        "visible": false
+       },
+       "name": "Dimension[-6]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/math/GPI/FFTW_GPI.FFTW_GROUP'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627365573648,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": {
+         "compute": false,
+         "in_len": 1,
+         "length": 1
+        },
+        "visible": false
+       },
+       "name": "Dimension[-7]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/math/GPI/FFTW_GPI.FFTW_GROUP'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627365575728,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": {
+         "compute": false,
+         "in_len": 1,
+         "length": 1
+        },
+        "visible": false
+       },
+       "name": "Dimension[-8]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/math/GPI/FFTW_GPI.FFTW_GROUP'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627365594448,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": {
+         "compute": false,
+         "in_len": 1,
+         "length": 1
+        },
+        "visible": false
+       },
+       "name": "Dimension[-9]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/math/GPI/FFTW_GPI.FFTW_GROUP'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627365596528,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": {
+         "compute": false,
+         "in_len": 1,
+         "length": 1
+        },
+        "visible": false
+       },
+       "name": "Dimension[-10]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/math/GPI/FFTW_GPI.FFTW_GROUP'>"
+      },
+      {
+       "kwargs": {
+        "button_title": "",
+        "collapsed": false,
+        "id": 140627365602800,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "toggle": true,
+        "val": false,
+        "visible": true
+       },
+       "name": "inverse",
+       "type": "<class 'gpi.widgets.PushButton'>"
+      },
+      {
+       "kwargs": {
+        "button_title": "",
+        "collapsed": false,
+        "id": 140627365603600,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "toggle": true,
+        "val": true,
+        "visible": true
+       },
+       "name": "compute",
+       "type": "<class 'gpi.widgets.PushButton'>"
+      }
+     ]
+    }
+   },
+   {
+    "avgwalltime": "2.8347859382629395",
+    "id": 140627362954288,
+    "key": "gpilab.phillips_format.oversamples_kspaces_from_reader_output",
+    "name": "oversamples_kspaces_from_reader_output",
+    "ports": [
+     {
+      "connections": [
+       {
+        "dest": {
+         "nodeID": 140627362954288,
+         "portID": 140627366618448,
+         "portName": "data",
+         "portNum": 0
+        },
+        "src": {
+         "nodeID": 140627367779216,
+         "portID": 140627365560144,
+         "portName": "out",
+         "portNum": 0
+        }
+       }
+      ],
+      "id": 140627366618448,
+      "obligation": 100,
+      "portnum": 0,
+      "porttitle": "data",
+      "porttype": 65540,
+      "widgetTitle": null
+     },
+     {
+      "connections": [
+       {
+        "dest": {
+         "nodeID": 140627362954288,
+         "portID": 140627366618608,
+         "portName": "noise",
+         "portNum": 1
+        },
+        "src": {
+         "nodeID": 140627365655888,
+         "portID": 140627365628496,
+         "portName": "out",
+         "portNum": 0
+        }
+       }
+      ],
+      "id": 140627366618608,
+      "obligation": 100,
+      "portnum": 1,
+      "porttitle": "noise",
+      "porttype": 65540,
+      "widgetTitle": null
+     },
+     {
+      "connections": [
+       {
+        "dest": {
+         "nodeID": 140627362954288,
+         "portID": 140627366618768,
+         "portName": "header",
+         "portNum": 2
+        },
+        "src": {
+         "nodeID": 140627367570800,
+         "portID": 140627367562768,
+         "portName": "out",
+         "portNum": 0
+        }
+       }
+      ],
+      "id": 140627366618768,
+      "obligation": 100,
+      "portnum": 2,
+      "porttitle": "header",
+      "porttype": 65540,
+      "widgetTitle": null
+     },
+     {
+      "connections": [
+       {
+        "dest": {
+         "nodeID": 140627365901168,
+         "portID": 140627365287888,
+         "portName": "in",
+         "portNum": 0
+        },
+        "src": {
+         "nodeID": 140627362954288,
+         "portID": 140627366618928,
+         "portName": "oversampled_kspaces",
+         "portNum": 0
+        }
+       }
+      ],
+      "id": 140627366618928,
+      "obligation": null,
+      "portnum": 0,
+      "porttitle": "oversampled_kspaces",
+      "porttype": 65541,
+      "widgetTitle": null
+     }
+    ],
+    "pos": [
+     -93.42857142857144,
+     -232.85714285714286
+    ],
+    "stdwalltime": "0.04974937438964844",
+    "walltime": "2.884535312652588",
+    "widget_settings": {
+     "label": "",
+     "parms": [
+      {
+       "kwargs": {
+        "button_title": "",
+        "collapsed": false,
+        "id": 140627366617648,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "toggle": true,
+        "val": false,
+        "visible": true
+       },
+       "name": "DcOffsetCorrection",
+       "type": "<class 'gpi.widgets.PushButton'>"
+      }
+     ]
+    }
+   },
+   {
+    "avgwalltime": "0.04043943231756037",
+    "id": 140627365532848,
+    "key": "gpi_core.display.ImageDisplay",
+    "name": "ImageDisplay",
+    "ports": [
+     {
+      "connections": [
+       {
+        "dest": {
+         "nodeID": 140627365532848,
+         "portID": 140627367042256,
+         "portName": "in",
+         "portNum": 0
+        },
+        "src": {
+         "nodeID": 140627367177744,
+         "portID": 140627364427408,
+         "portName": "out",
+         "portNum": 0
+        }
+       }
+      ],
+      "id": 140627367042256,
+      "obligation": 100,
+      "portnum": 0,
+      "porttitle": "in",
+      "porttype": 65540,
+      "widgetTitle": null
+     },
+     {
+      "connections": [],
+      "id": 140627367042416,
+      "obligation": null,
+      "portnum": 0,
+      "porttitle": "out",
+      "porttype": 65541,
+      "widgetTitle": null
+     },
+     {
+      "connections": [],
+      "id": 140627367042576,
+      "obligation": null,
+      "portnum": 1,
+      "porttitle": "temp",
+      "porttype": 65541,
+      "widgetTitle": null
+     }
+    ],
+    "pos": [
+     -126.42857142857144,
+     289.14285714285717
+    ],
+    "stdwalltime": "0.001653130741148603",
+    "walltime": "0.04078507423400879",
+    "widget_settings": {
+     "label": "",
+     "parms": [
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627365675088,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": 2,
+        "visible": true
+       },
+       "name": "Complex Display",
+       "type": "<class 'gpi.widgets.ExclusivePushButtons'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": true,
+        "id": 140627365676208,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": 0,
+        "visible": true
+       },
+       "name": "Color Map",
+       "type": "<class 'gpi.widgets.ExclusivePushButtons'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627365677488,
+        "immediate": false,
+        "inport": false,
+        "label": "",
+        "max": 2147483647,
+        "min": 0,
+        "outport": false,
+        "quietval": null,
+        "singlestep": 1,
+        "val": 0,
+        "visible": false,
+        "wrapping": false
+       },
+       "name": "Edge Pixels",
+       "type": "<class 'gpi.widgets.SpinBox'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627365678448,
+        "immediate": false,
+        "inport": false,
+        "label": "",
+        "max": 2147483647,
+        "min": 0,
+        "outport": false,
+        "quietval": null,
+        "singlestep": 1,
+        "val": 0,
+        "visible": false,
+        "wrapping": false
+       },
+       "name": "Black Pixels",
+       "type": "<class 'gpi.widgets.SpinBox'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627365699984,
+        "inport": false,
+        "interp": false,
+        "line": null,
+        "noscroll": true,
+        "outport": false,
+        "points": null,
+        "quietval": null,
+        "scale": 0.3,
+        "val": null,
+        "visible": true
+       },
+       "name": "Viewport:",
+       "type": "<class 'gpi.widgets.DisplayBox'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627367043472,
+        "inport": false,
+        "max": 24,
+        "min": 1,
+        "outport": false,
+        "quietval": null,
+        "val": 1,
+        "visible": false
+       },
+       "name": "Slice",
+       "type": "<class 'gpi.widgets.Slider'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627365647056,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": 2,
+        "visible": true
+       },
+       "name": "Slice/Tile Dimension",
+       "type": "<class 'gpi.widgets.ExclusivePushButtons'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627367045232,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": 1,
+        "visible": true
+       },
+       "name": "Extra Dimension",
+       "type": "<class 'gpi.widgets.ExclusivePushButtons'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627367046032,
+        "immediate": false,
+        "inport": false,
+        "label": "",
+        "max": 2147483647,
+        "min": -2147483648,
+        "outport": false,
+        "quietval": null,
+        "singlestep": 1,
+        "val": 5,
+        "visible": true,
+        "wrapping": false
+       },
+       "name": "# Columns",
+       "type": "<class 'gpi.widgets.SpinBox'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627367046992,
+        "immediate": false,
+        "inport": false,
+        "label": "",
+        "max": 2147483647,
+        "min": -2147483648,
+        "outport": false,
+        "quietval": null,
+        "singlestep": 1,
+        "val": 5,
+        "visible": true,
+        "wrapping": false
+       },
+       "name": "# Rows",
+       "type": "<class 'gpi.widgets.SpinBox'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": true,
+        "id": 140627367031664,
+        "inport": false,
+        "max": 100,
+        "min": 0,
+        "outport": false,
+        "quietval": null,
+        "val": {
+         "ceiling": 100,
+         "floor": 0,
+         "level": 50,
+         "window": 100
+        },
+        "visible": true
+       },
+       "name": "L W F C:",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/display/GPI/ImageDisplay_GPI.WindowLevel'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627367057200,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": 0,
+        "visible": true
+       },
+       "name": "Scalar Display",
+       "type": "<class 'gpi.widgets.ExclusivePushButtons'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "decimals": 3,
+        "id": 140627367058000,
+        "immediate": false,
+        "inport": false,
+        "label": "",
+        "max": 10.0,
+        "min": 0.1,
+        "outport": false,
+        "quietval": null,
+        "singlestep": 0.05,
+        "val": 1.0,
+        "visible": true,
+        "wrapping": false
+       },
+       "name": "Gamma",
+       "type": "<class 'gpi.widgets.DoubleSpinBox'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627367058960,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": 0,
+        "visible": true
+       },
+       "name": "Zero Ref",
+       "type": "<class 'gpi.widgets.ExclusivePushButtons'>"
+      },
+      {
+       "kwargs": {
+        "button_title": "Auto-Range On",
+        "collapsed": false,
+        "id": 140627367039696,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "toggle": true,
+        "val": false,
+        "visible": true
+       },
+       "name": "Fix Range",
+       "type": "<class 'gpi.widgets.PushButton'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "decimals": 2,
+        "id": 140627367040336,
+        "immediate": false,
+        "inport": false,
+        "label": "",
+        "max": 1.7976931348623157e+308,
+        "min": -1.7976931348623157e+308,
+        "outport": false,
+        "quietval": null,
+        "singlestep": 1.0,
+        "val": 0.0,
+        "visible": true,
+        "wrapping": false
+       },
+       "name": "Range Min",
+       "type": "<class 'gpi.widgets.DoubleSpinBox'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "decimals": 2,
+        "id": 140627367039376,
+        "immediate": false,
+        "inport": false,
+        "label": "",
+        "max": 1.7976931348623157e+308,
+        "min": -1.7976931348623157e+308,
+        "outport": false,
+        "quietval": null,
+        "singlestep": 1.0,
+        "val": 0.88,
+        "visible": true,
+        "wrapping": false
+       },
+       "name": "Range Max",
+       "type": "<class 'gpi.widgets.DoubleSpinBox'>"
+      }
+     ]
+    }
+   },
+   {
+    "avgwalltime": "0.7587539499456232",
+    "id": 140627364136112,
+    "key": "bart.gpi.ECalib",
+    "name": "ECalib",
+    "ports": [
+     {
+      "connections": [
+       {
+        "dest": {
+         "nodeID": 140627364136112,
+         "portID": 140627364145904,
+         "portName": "kspace",
+         "portNum": 0
+        },
+        "src": {
+         "nodeID": 140627365310864,
+         "portID": 140627365386352,
+         "portName": "out",
+         "portNum": 0
+        }
+       }
+      ],
+      "id": 140627364145904,
+      "obligation": 100,
+      "portnum": 0,
+      "porttitle": "kspace",
+      "porttype": 65540,
+      "widgetTitle": null
+     },
+     {
+      "connections": [
+       {
+        "dest": {
+         "nodeID": 140627364530768,
+         "portID": 140627363888176,
+         "portName": "in",
+         "portNum": 0
+        },
+        "src": {
+         "nodeID": 140627364136112,
+         "portID": 140627364146064,
+         "portName": "sensitivities",
+         "portNum": 0
+        }
+       }
+      ],
+      "id": 140627364146064,
+      "obligation": null,
+      "portnum": 0,
+      "porttitle": "sensitivities",
+      "porttype": 65541,
+      "widgetTitle": null
+     },
+     {
+      "connections": [],
+      "id": 140627364146224,
+      "obligation": null,
+      "portnum": 1,
+      "porttitle": "ev_maps",
+      "porttype": 65541,
+      "widgetTitle": null
+     },
+     {
+      "connections": [],
+      "id": 140627364146384,
+      "obligation": null,
+      "portnum": 2,
+      "porttitle": "imgcov",
+      "porttype": 65541,
+      "widgetTitle": null
+     }
+    ],
+    "pos": [
+     -235.42857142857144,
+     84.14285714285714
+    ],
+    "stdwalltime": "0.07167421378096082",
+    "walltime": "0.7357046604156494",
+    "widget_settings": {
+     "label": "",
+     "parms": [
+      {
+       "kwargs": {
+        "collapsed": false,
+        "decimals": 5,
+        "id": 140627364225584,
+        "immediate": false,
+        "inport": false,
+        "label": "",
+        "max": 1.7976931348623157e+308,
+        "min": 0.0,
+        "outport": false,
+        "quietval": null,
+        "singlestep": 1.0,
+        "val": 1e-05,
+        "visible": true,
+        "wrapping": false
+       },
+       "name": "threshold",
+       "type": "<class 'gpi.widgets.DoubleSpinBox'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "decimals": 2,
+        "id": 140627364226544,
+        "immediate": false,
+        "inport": false,
+        "label": "",
+        "max": 1.7976931348623157e+308,
+        "min": 0.0,
+        "outport": false,
+        "quietval": null,
+        "singlestep": 1.0,
+        "val": 0.8,
+        "visible": true,
+        "wrapping": false
+       },
+       "name": "crop value",
+       "type": "<class 'gpi.widgets.DoubleSpinBox'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627364227504,
+        "immediate": false,
+        "inport": false,
+        "label": "",
+        "max": 2147483647,
+        "min": 1,
+        "outport": false,
+        "quietval": null,
+        "singlestep": 1,
+        "val": 2,
+        "visible": true,
+        "wrapping": false
+       },
+       "name": "kernel size",
+       "type": "<class 'gpi.widgets.SpinBox'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627364228304,
+        "immediate": false,
+        "inport": false,
+        "label": "",
+        "max": 2147483647,
+        "min": 1,
+        "outport": false,
+        "quietval": null,
+        "singlestep": 1,
+        "val": 6,
+        "visible": true,
+        "wrapping": false
+       },
+       "name": "calibration size",
+       "type": "<class 'gpi.widgets.SpinBox'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627364143344,
+        "immediate": false,
+        "inport": false,
+        "label": "",
+        "max": 2147483647,
+        "min": 1,
+        "outport": false,
+        "quietval": null,
+        "singlestep": 1,
+        "val": 1,
+        "visible": true,
+        "wrapping": false
+       },
+       "name": "number maps",
+       "type": "<class 'gpi.widgets.SpinBox'>"
+      },
+      {
+       "kwargs": {
+        "button_title": "",
+        "collapsed": false,
+        "id": 140627364144304,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "toggle": true,
+        "val": false,
+        "visible": true
+       },
+       "name": "intensity correction",
+       "type": "<class 'gpi.widgets.PushButton'>"
+      },
+      {
+       "kwargs": {
+        "button_title": "",
+        "collapsed": false,
+        "id": 140627364145104,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "toggle": true,
+        "val": false,
+        "visible": true
+       },
+       "name": "1st part only",
+       "type": "<class 'gpi.widgets.PushButton'>"
+      }
+     ]
+    }
+   },
+   {
+    "avgwalltime": "0.23098337650299072",
+    "id": 140627368727888,
+    "key": "gpi_core.shapers.Transpose",
+    "name": "Transpose",
+    "ports": [
+     {
+      "connections": [
+       {
+        "dest": {
+         "nodeID": 140627368727888,
+         "portID": 140627368761456,
+         "portName": "in",
+         "portNum": 0
+        },
+        "src": {
+         "nodeID": 140627367664048,
+         "portID": 140627367721712,
+         "portName": "out",
+         "portNum": 0
+        }
+       }
+      ],
+      "id": 140627368761456,
+      "obligation": 100,
+      "portnum": 0,
+      "porttitle": "in",
+      "porttype": 65540,
+      "widgetTitle": null
+     },
+     {
+      "connections": [
+       {
+        "dest": {
+         "nodeID": 140627365532688,
+         "portID": 140627365604400,
+         "portName": "in",
+         "portNum": 0
+        },
+        "src": {
+         "nodeID": 140627368727888,
+         "portID": 140627368761616,
+         "portName": "out",
+         "portNum": 0
+        }
+       },
+       {
+        "dest": {
+         "nodeID": 140627368827152,
+         "portID": 140627368143120,
+         "portName": "in",
+         "portNum": 0
+        },
+        "src": {
+         "nodeID": 140627368727888,
+         "portID": 140627368761616,
+         "portName": "out",
+         "portNum": 0
+        }
+       },
+       {
+        "dest": {
+         "nodeID": 140627365310864,
+         "portID": 140627365386192,
+         "portName": "in",
+         "portNum": 0
+        },
+        "src": {
+         "nodeID": 140627368727888,
+         "portID": 140627368761616,
+         "portName": "out",
+         "portNum": 0
+        }
+       }
+      ],
+      "id": 140627368761616,
+      "obligation": null,
+      "portnum": 0,
+      "porttitle": "out",
+      "porttype": 65541,
+      "widgetTitle": null
+     }
+    ],
+    "pos": [
+     -99.42857142857144,
+     -2.857142857142854
+    ],
+    "stdwalltime": "0.00990307331085205",
+    "walltime": "0.22108030319213867",
+    "widget_settings": {
+     "label": "",
+     "parms": [
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627368759696,
+        "inport": false,
+        "openExternalLinks": false,
+        "outport": false,
+        "quietval": null,
+        "val": "Input Dimensions: (24, 1, 256, 256)\nOutput Dimensions: (1, 256, 256, 24)\n",
+        "visible": true,
+        "wordwrap": false
+       },
+       "name": "Info:",
+       "type": "<class 'gpi.widgets.TextBox'>"
+      },
+      {
+       "kwargs": {
+        "button_title": "",
+        "collapsed": false,
+        "id": 140627368760176,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "toggle": true,
+        "val": true,
+        "visible": true
+       },
+       "name": "Transpose",
+       "type": "<class 'gpi.widgets.PushButton'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627368760976,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": [
+         "1",
+         "2",
+         "3",
+         "0"
+        ],
+        "visible": true
+       },
+       "name": "Dimension Order",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/shapers/GPI/Transpose_GPI.OrderButtons'>"
+      }
+     ]
+    }
+   },
+   {
+    "avgwalltime": "0.03691267967224121",
+    "id": 140627365655888,
+    "key": "gpi_core.fileIO.ReadNPY",
+    "name": "ReadNPY",
+    "ports": [
+     {
+      "connections": [
+       {
+        "dest": {
+         "nodeID": 140627362954288,
+         "portID": 140627366618608,
+         "portName": "noise",
+         "portNum": 1
+        },
+        "src": {
+         "nodeID": 140627365655888,
+         "portID": 140627365628496,
+         "portName": "out",
+         "portNum": 0
+        }
+       }
+      ],
+      "id": 140627365628496,
+      "obligation": null,
+      "portnum": 0,
+      "porttitle": "out",
+      "porttype": 65541,
+      "widgetTitle": null
+     }
+    ],
+    "pos": [
+     85.57142857142856,
+     -309.85714285714283
+    ],
+    "stdwalltime": "0.0020682811737060547",
+    "walltime": "0.038980960845947266",
+    "widget_settings": {
+     "label": "",
+     "parms": [
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627365626576,
+        "inport": false,
+        "openExternalLinks": false,
+        "outport": false,
+        "quietval": null,
+        "val": "created: 11/05/2021\naccessed: 18/05/2021\nmodified: 11/05/2021\nUID: 1000\nGID: 1000\nfile size (bytes): 3824768\ndimensions: [24, 19920]\ntype: complex64\n",
+        "visible": true,
+        "wordwrap": false
+       },
+       "name": "I/O Info:",
+       "type": "<class 'gpi.widgets.TextBox'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "directory": "/home/touquet/MRIData_tmp",
+        "id": 140627365627056,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": "/home/touquet/MRIData_tmp/20210127_162451_QFLOW_Ao__noise.npy",
+        "visible": true
+       },
+       "name": "File Browser",
+       "type": "<class 'gpi.widgets.OpenFileBrowser'>"
+      },
+      {
+       "kwargs": {
+        "button_title": "",
+        "collapsed": false,
+        "id": 140627365627696,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "toggle": true,
+        "val": false,
+        "visible": true
+       },
+       "name": "Squeeze",
+       "type": "<class 'gpi.widgets.PushButton'>"
+      }
+     ]
+    }
+   },
+   {
+    "avgwalltime": "0.17482149600982666",
+    "id": 140627366784368,
+    "key": "gpi_core.shapers.Reduce",
+    "name": "Reduce",
+    "ports": [
+     {
+      "connections": [
+       {
+        "dest": {
+         "nodeID": 140627366784368,
+         "portID": 140627368631664,
+         "portName": "in",
+         "portNum": 0
+        },
+        "src": {
+         "nodeID": 140627366416624,
+         "portID": 140627366351888,
+         "portName": "Collapse Single Dim",
+         "portNum": 0
+        }
+       }
+      ],
+      "id": 140627368631664,
+      "obligation": 100,
+      "portnum": 0,
+      "porttitle": "in",
+      "porttype": 65540,
+      "widgetTitle": null
+     },
+     {
+      "connections": [
+       {
+        "dest": {
+         "nodeID": 140627365401136,
+         "portID": 140627364956912,
+         "portName": "in",
+         "portNum": 0
+        },
+        "src": {
+         "nodeID": 140627366784368,
+         "portID": 140627368631824,
+         "portName": "out",
+         "portNum": 0
+        }
+       }
+      ],
+      "id": 140627368631824,
+      "obligation": null,
+      "portnum": 0,
+      "porttitle": "out",
+      "porttype": 65541,
+      "widgetTitle": null
+     },
+     {
+      "connections": [],
+      "id": 140627368631984,
+      "obligation": null,
+      "portnum": 1,
+      "porttitle": "mask",
+      "porttype": 65541,
+      "widgetTitle": null
+     }
+    ],
+    "pos": [
+     269.57142857142856,
+     -2.857142857142854
+    ],
+    "stdwalltime": "0.011887669563293457",
+    "walltime": "0.18670916557312012",
+    "widget_settings": {
+     "label": "",
+     "parms": [
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627366926768,
+        "inport": false,
+        "openExternalLinks": false,
+        "outport": false,
+        "quietval": null,
+        "val": "input: (24, 2, 256, 256)\noutput: (256, 256)",
+        "visible": true,
+        "wordwrap": false
+       },
+       "name": "I/O Info:",
+       "type": "<class 'gpi.widgets.TextBox'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627366927248,
+        "inport": false,
+        "max": 256,
+        "min": 1,
+        "outport": false,
+        "quietmax": null,
+        "quietval": null,
+        "val": {
+         "ceiling": 256,
+         "center": 129,
+         "floor": 1,
+         "selection": 3,
+         "width": 256
+        },
+        "visible": true
+       },
+       "name": "Dimension[-1]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/shapers/GPI/Reduce_GPI.ReduceSliders'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627366932560,
+        "inport": false,
+        "max": 256,
+        "min": 1,
+        "outport": false,
+        "quietmax": null,
+        "quietval": null,
+        "val": {
+         "ceiling": 256,
+         "center": 129,
+         "floor": 1,
+         "selection": 3,
+         "width": 256
+        },
+        "visible": true
+       },
+       "name": "Dimension[-2]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/shapers/GPI/Reduce_GPI.ReduceSliders'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627366950064,
+        "inport": false,
+        "max": 2,
+        "min": 1,
+        "outport": false,
+        "quietmax": null,
+        "quietval": null,
+        "val": {
+         "ceiling": 2,
+         "center": 2,
+         "floor": 2,
+         "selection": 2,
+         "width": 1
+        },
+        "visible": true
+       },
+       "name": "Dimension[-3]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/shapers/GPI/Reduce_GPI.ReduceSliders'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627366955280,
+        "inport": false,
+        "max": 24,
+        "min": 1,
+        "outport": false,
+        "quietmax": null,
+        "quietval": null,
+        "val": {
+         "ceiling": 13,
+         "center": 13,
+         "floor": 13,
+         "selection": 2,
+         "width": 1
+        },
+        "visible": true
+       },
+       "name": "Dimension[-4]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/shapers/GPI/Reduce_GPI.ReduceSliders'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627366976880,
+        "inport": false,
+        "max": 100,
+        "min": 1,
+        "outport": false,
+        "quietmax": null,
+        "quietval": null,
+        "val": {
+         "ceiling": 100,
+         "center": 51,
+         "floor": 1,
+         "selection": 3,
+         "width": 100
+        },
+        "visible": false
+       },
+       "name": "Dimension[-5]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/shapers/GPI/Reduce_GPI.ReduceSliders'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627366982192,
+        "inport": false,
+        "max": 100,
+        "min": 1,
+        "outport": false,
+        "quietmax": null,
+        "quietval": null,
+        "val": {
+         "ceiling": 100,
+         "center": 51,
+         "floor": 1,
+         "selection": 3,
+         "width": 100
+        },
+        "visible": false
+       },
+       "name": "Dimension[-6]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/shapers/GPI/Reduce_GPI.ReduceSliders'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627366987408,
+        "inport": false,
+        "max": 100,
+        "min": 1,
+        "outport": false,
+        "quietmax": null,
+        "quietval": null,
+        "val": {
+         "ceiling": 100,
+         "center": 51,
+         "floor": 1,
+         "selection": 3,
+         "width": 100
+        },
+        "visible": false
+       },
+       "name": "Dimension[-7]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/shapers/GPI/Reduce_GPI.ReduceSliders'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627366992304,
+        "inport": false,
+        "max": 100,
+        "min": 1,
+        "outport": false,
+        "quietmax": null,
+        "quietval": null,
+        "val": {
+         "ceiling": 100,
+         "center": 51,
+         "floor": 1,
+         "selection": 3,
+         "width": 100
+        },
+        "visible": false
+       },
+       "name": "Dimension[-8]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/shapers/GPI/Reduce_GPI.ReduceSliders'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627367005552,
+        "inport": false,
+        "max": 100,
+        "min": 1,
+        "outport": false,
+        "quietmax": null,
+        "quietval": null,
+        "val": {
+         "ceiling": 100,
+         "center": 51,
+         "floor": 1,
+         "selection": 3,
+         "width": 100
+        },
+        "visible": false
+       },
+       "name": "Dimension[-9]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/shapers/GPI/Reduce_GPI.ReduceSliders'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627368612560,
+        "inport": false,
+        "max": 100,
+        "min": 1,
+        "outport": false,
+        "quietmax": null,
+        "quietval": null,
+        "val": {
+         "ceiling": 100,
+         "center": 51,
+         "floor": 1,
+         "selection": 3,
+         "width": 100
+        },
+        "visible": false
+       },
+       "name": "Dimension[-10]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/shapers/GPI/Reduce_GPI.ReduceSliders'>"
+      },
+      {
+       "kwargs": {
+        "button_title": "",
+        "collapsed": false,
+        "id": 140627368630064,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "toggle": true,
+        "val": false,
+        "visible": true
+       },
+       "name": "Mask",
+       "type": "<class 'gpi.widgets.PushButton'>"
+      },
+      {
+       "kwargs": {
+        "button_title": "",
+        "collapsed": false,
+        "id": 140627368630864,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "toggle": true,
+        "val": true,
+        "visible": true
+       },
+       "name": "Compute",
+       "type": "<class 'gpi.widgets.PushButton'>"
+      }
+     ]
+    }
+   },
+   {
+    "avgwalltime": "0.1723576784133911",
+    "id": 140627367570800,
+    "key": "gpi_core.fileIO.ReadPickled",
+    "name": "ReadPickled",
+    "ports": [
+     {
+      "connections": [
+       {
+        "dest": {
+         "nodeID": 140627365850480,
+         "portID": 140627365854576,
+         "portName": "header",
+         "portNum": 1
+        },
+        "src": {
+         "nodeID": 140627367570800,
+         "portID": 140627367562768,
+         "portName": "out",
+         "portNum": 0
+        }
+       },
+       {
+        "dest": {
+         "nodeID": 140627362954288,
+         "portID": 140627366618768,
+         "portName": "header",
+         "portNum": 2
+        },
+        "src": {
+         "nodeID": 140627367570800,
+         "portID": 140627367562768,
+         "portName": "out",
+         "portNum": 0
+        }
+       }
+      ],
+      "id": 140627367562768,
+      "obligation": null,
+      "portnum": 0,
+      "porttitle": "out",
+      "porttype": 65541,
+      "widgetTitle": null
+     }
+    ],
+    "pos": [
+     271.57142857142856,
+     -306.85714285714283
+    ],
+    "stdwalltime": "0.002646803855895996",
+    "walltime": "0.1750044822692871",
+    "widget_settings": {
+     "label": "",
+     "parms": [
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627367561648,
+        "inport": false,
+        "openExternalLinks": false,
+        "outport": false,
+        "quietval": null,
+        "val": "created: 11/05/2021\naccessed: 18/05/2021\nmodified: 07/05/2021\nUID: 1000\nGID: 1000\nfile size (bytes): 560688\ntype: <class 'dict'>\n",
+        "visible": true,
+        "wordwrap": false
+       },
+       "name": "I/O Info:",
+       "type": "<class 'gpi.widgets.TextBox'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "directory": "/home/touquet/MRIData_tmp",
+        "id": 140627367562128,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": "/home/touquet/MRIData_tmp/20210127_162451_QFLOW_Ao__header.pickle",
+        "visible": true
+       },
+       "name": "File Browser",
+       "type": "<class 'gpi.widgets.OpenFileBrowser'>"
+      }
+     ]
+    }
+   },
+   {
+    "avgwalltime": "4.293527007102966",
+    "id": 140627365850480,
+    "key": "gpilab.phillips_format.reconprep_images",
+    "name": "reconprep_images",
+    "ports": [
+     {
+      "connections": [
+       {
+        "dest": {
+         "nodeID": 140627365850480,
+         "portID": 140627365854416,
+         "portName": "images",
+         "portNum": 0
+        },
+        "src": {
+         "nodeID": 140627365901168,
+         "portID": 140627365288048,
+         "portName": "out",
+         "portNum": 0
+        }
+       }
+      ],
+      "id": 140627365854416,
+      "obligation": 100,
+      "portnum": 0,
+      "porttitle": "images",
+      "porttype": 65540,
+      "widgetTitle": null
+     },
+     {
+      "connections": [
+       {
+        "dest": {
+         "nodeID": 140627365850480,
+         "portID": 140627365854576,
+         "portName": "header",
+         "portNum": 1
+        },
+        "src": {
+         "nodeID": 140627367570800,
+         "portID": 140627367562768,
+         "portName": "out",
+         "portNum": 0
+        }
+       }
+      ],
+      "id": 140627365854576,
+      "obligation": 100,
+      "portnum": 1,
+      "porttitle": "header",
+      "porttype": 65540,
+      "widgetTitle": null
+     },
+     {
+      "connections": [
+       {
+        "dest": {
+         "nodeID": 140627367664048,
+         "portID": 140627367721552,
+         "portName": "in",
+         "portNum": 0
+        },
+        "src": {
+         "nodeID": 140627365850480,
+         "portID": 140627365854736,
+         "portName": "output_images",
+         "portNum": 0
+        }
+       },
+       {
+        "dest": {
+         "nodeID": 140627366416624,
+         "portID": 140627366351728,
+         "portName": "in",
+         "portNum": 0
+        },
+        "src": {
+         "nodeID": 140627365850480,
+         "portID": 140627365854736,
+         "portName": "output_images",
+         "portNum": 0
+        }
+       }
+      ],
+      "id": 140627365854736,
+      "obligation": null,
+      "portnum": 0,
+      "porttitle": "output_images",
+      "porttype": 65541,
+      "widgetTitle": null
+     },
+     {
+      "connections": [],
+      "id": 140627365854896,
+      "obligation": null,
+      "portnum": 1,
+      "porttitle": "oversampled_images",
+      "porttype": 65541,
+      "widgetTitle": null
+     }
+    ],
+    "pos": [
+     -97.42857142857144,
+     -122.85714285714286
+    ],
+    "stdwalltime": "0.1309889554977417",
+    "walltime": "4.424515962600708",
+    "widget_settings": {
+     "label": "",
+     "parms": [
+      {
+       "kwargs": {
+        "button_title": "",
+        "collapsed": false,
+        "id": 140627365853616,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "toggle": true,
+        "val": false,
+        "visible": true
+       },
+       "name": "recon_format",
+       "type": "<class 'gpi.widgets.PushButton'>"
+      }
+     ]
+    }
+   },
+   {
+    "avgwalltime": "0.8917308070442893",
+    "id": 140627363935568,
+    "key": "bart.gpi.PICS",
+    "name": "PICS",
+    "ports": [
+     {
+      "connections": [
+       {
+        "dest": {
+         "nodeID": 140627363935568,
+         "portID": 140627363923760,
+         "portName": "kspace",
+         "portNum": 0
+        },
+        "src": {
+         "nodeID": 140627365532688,
+         "portID": 140627365604560,
+         "portName": "out",
+         "portNum": 0
+        }
+       }
+      ],
+      "id": 140627363923760,
+      "obligation": 100,
+      "portnum": 0,
+      "porttitle": "kspace",
+      "porttype": 65540,
+      "widgetTitle": null
+     },
+     {
+      "connections": [
+       {
+        "dest": {
+         "nodeID": 140627363935568,
+         "portID": 140627363923920,
+         "portName": "coil_maps",
+         "portNum": 1
+        },
+        "src": {
+         "nodeID": 140627364530768,
+         "portID": 140627363888336,
+         "portName": "out",
+         "portNum": 0
+        }
+       }
+      ],
+      "id": 140627363923920,
+      "obligation": 100,
+      "portnum": 1,
+      "porttitle": "coil_maps",
+      "porttype": 65540,
+      "widgetTitle": null
+     },
+     {
+      "connections": [],
+      "id": 140627363924080,
+      "obligation": 200,
+      "portnum": 2,
+      "porttitle": "traj",
+      "porttype": 65540,
+      "widgetTitle": null
+     },
+     {
+      "connections": [
+       {
+        "dest": {
+         "nodeID": 140627364972336,
+         "portID": 140627365089360,
+         "portName": "in",
+         "portNum": 0
+        },
+        "src": {
+         "nodeID": 140627363935568,
+         "portID": 140627363924240,
+         "portName": "output",
+         "portNum": 0
+        }
+       }
+      ],
+      "id": 140627363924240,
+      "obligation": null,
+      "portnum": 0,
+      "porttitle": "output",
+      "porttype": 65541,
+      "widgetTitle": null
+     }
+    ],
+    "pos": [
+     16.571428571428555,
+     243.14285714285714
+    ],
+    "stdwalltime": "0.035133139601376706",
+    "walltime": "0.851588249206543",
+    "widget_settings": {
+     "label": "",
+     "parms": [
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627363922160,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": 1,
+        "visible": true
+       },
+       "name": "regularization",
+       "type": "<class 'gpi.widgets.ExclusivePushButtons'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "decimals": 5,
+        "id": 140627363922800,
+        "immediate": false,
+        "inport": false,
+        "label": "",
+        "max": 1.0,
+        "min": 0.0,
+        "outport": false,
+        "quietval": null,
+        "singlestep": 1.0,
+        "val": 0.01,
+        "visible": true,
+        "wrapping": false
+       },
+       "name": "lamb",
+       "type": "<class 'gpi.widgets.DoubleSpinBox'>"
+      }
+     ]
+    }
+   },
+   {
+    "avgwalltime": "0.24950131503018466",
+    "id": 140627367177744,
+    "key": "gpi_core.shapers.Reduce",
+    "name": "Reduce",
+    "ports": [
+     {
+      "connections": [
+       {
+        "dest": {
+         "nodeID": 140627367177744,
+         "portID": 140627364417360,
+         "portName": "in",
+         "portNum": 0
+        },
+        "src": {
+         "nodeID": 140627364530768,
+         "portID": 140627363888336,
+         "portName": "out",
+         "portNum": 0
+        }
+       }
+      ],
+      "id": 140627364417360,
+      "obligation": 100,
+      "portnum": 0,
+      "porttitle": "in",
+      "porttype": 65540,
+      "widgetTitle": null
+     },
+     {
+      "connections": [
+       {
+        "dest": {
+         "nodeID": 140627365532848,
+         "portID": 140627367042256,
+         "portName": "in",
+         "portNum": 0
+        },
+        "src": {
+         "nodeID": 140627367177744,
+         "portID": 140627364427408,
+         "portName": "out",
+         "portNum": 0
+        }
+       }
+      ],
+      "id": 140627364427408,
+      "obligation": null,
+      "portnum": 0,
+      "porttitle": "out",
+      "porttype": 65541,
+      "widgetTitle": null
+     },
+     {
+      "connections": [],
+      "id": 140627364425808,
+      "obligation": null,
+      "portnum": 1,
+      "porttitle": "mask",
+      "porttype": 65541,
+      "widgetTitle": null
+     }
+    ],
+    "pos": [
+     -109.42857142857144,
+     241.14285714285714
+    ],
+    "stdwalltime": "0.008861432245308606",
+    "walltime": "0.26184797286987305",
+    "widget_settings": {
+     "label": "",
+     "parms": [
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627367218704,
+        "inport": false,
+        "openExternalLinks": false,
+        "outport": false,
+        "quietval": null,
+        "val": "input: (1, 256, 256, 24)\noutput: (256, 256, 24)",
+        "visible": true,
+        "wordwrap": false
+       },
+       "name": "I/O Info:",
+       "type": "<class 'gpi.widgets.TextBox'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627367218224,
+        "inport": false,
+        "max": 24,
+        "min": 1,
+        "outport": false,
+        "quietmax": null,
+        "quietval": null,
+        "val": {
+         "ceiling": 24,
+         "center": 13,
+         "floor": 1,
+         "selection": 3,
+         "width": 24
+        },
+        "visible": true
+       },
+       "name": "Dimension[-1]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/shapers/GPI/Reduce_GPI.ReduceSliders'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627367223536,
+        "inport": false,
+        "max": 256,
+        "min": 1,
+        "outport": false,
+        "quietmax": null,
+        "quietval": null,
+        "val": {
+         "ceiling": 256,
+         "center": 129,
+         "floor": 1,
+         "selection": 3,
+         "width": 256
+        },
+        "visible": true
+       },
+       "name": "Dimension[-2]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/shapers/GPI/Reduce_GPI.ReduceSliders'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627367236784,
+        "inport": false,
+        "max": 256,
+        "min": 1,
+        "outport": false,
+        "quietmax": null,
+        "quietval": null,
+        "val": {
+         "ceiling": 256,
+         "center": 129,
+         "floor": 1,
+         "selection": 3,
+         "width": 256
+        },
+        "visible": true
+       },
+       "name": "Dimension[-3]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/shapers/GPI/Reduce_GPI.ReduceSliders'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627367229872,
+        "inport": false,
+        "max": 1,
+        "min": 1,
+        "outport": false,
+        "quietmax": null,
+        "quietval": null,
+        "val": {
+         "ceiling": 1,
+         "center": 1,
+         "floor": 1,
+         "selection": 2,
+         "width": 1
+        },
+        "visible": true
+       },
+       "name": "Dimension[-4]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/shapers/GPI/Reduce_GPI.ReduceSliders'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627367243120,
+        "inport": false,
+        "max": 100,
+        "min": 1,
+        "outport": false,
+        "quietmax": null,
+        "quietval": null,
+        "val": {
+         "ceiling": 100,
+         "center": 51,
+         "floor": 1,
+         "selection": 3,
+         "width": 100
+        },
+        "visible": false
+       },
+       "name": "Dimension[-5]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/shapers/GPI/Reduce_GPI.ReduceSliders'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627367264976,
+        "inport": false,
+        "max": 100,
+        "min": 1,
+        "outport": false,
+        "quietmax": null,
+        "quietval": null,
+        "val": {
+         "ceiling": 100,
+         "center": 51,
+         "floor": 1,
+         "selection": 3,
+         "width": 100
+        },
+        "visible": false
+       },
+       "name": "Dimension[-6]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/shapers/GPI/Reduce_GPI.ReduceSliders'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627367258064,
+        "inport": false,
+        "max": 100,
+        "min": 1,
+        "outport": false,
+        "quietmax": null,
+        "quietval": null,
+        "val": {
+         "ceiling": 100,
+         "center": 51,
+         "floor": 1,
+         "selection": 3,
+         "width": 100
+        },
+        "visible": false
+       },
+       "name": "Dimension[-7]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/shapers/GPI/Reduce_GPI.ReduceSliders'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627364420496,
+        "inport": false,
+        "max": 100,
+        "min": 1,
+        "outport": false,
+        "quietmax": null,
+        "quietval": null,
+        "val": {
+         "ceiling": 100,
+         "center": 51,
+         "floor": 1,
+         "selection": 3,
+         "width": 100
+        },
+        "visible": false
+       },
+       "name": "Dimension[-8]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/shapers/GPI/Reduce_GPI.ReduceSliders'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627364401232,
+        "inport": false,
+        "max": 100,
+        "min": 1,
+        "outport": false,
+        "quietmax": null,
+        "quietval": null,
+        "val": {
+         "ceiling": 100,
+         "center": 51,
+         "floor": 1,
+         "selection": 3,
+         "width": 100
+        },
+        "visible": false
+       },
+       "name": "Dimension[-9]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/shapers/GPI/Reduce_GPI.ReduceSliders'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627364394160,
+        "inport": false,
+        "max": 100,
+        "min": 1,
+        "outport": false,
+        "quietmax": null,
+        "quietval": null,
+        "val": {
+         "ceiling": 100,
+         "center": 51,
+         "floor": 1,
+         "selection": 3,
+         "width": 100
+        },
+        "visible": false
+       },
+       "name": "Dimension[-10]",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/shapers/GPI/Reduce_GPI.ReduceSliders'>"
+      },
+      {
+       "kwargs": {
+        "button_title": "",
+        "collapsed": false,
+        "id": 140627364415760,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "toggle": true,
+        "val": false,
+        "visible": true
+       },
+       "name": "Mask",
+       "type": "<class 'gpi.widgets.PushButton'>"
+      },
+      {
+       "kwargs": {
+        "button_title": "",
+        "collapsed": false,
+        "id": 140627364416560,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "toggle": true,
+        "val": true,
+        "visible": true
+       },
+       "name": "Compute",
+       "type": "<class 'gpi.widgets.PushButton'>"
+      }
+     ]
+    }
+   },
+   {
+    "avgwalltime": "0.0023780519312078304",
+    "id": 140627364972336,
+    "key": "gpi_core.display.ImageDisplay",
+    "name": "ImageDisplay",
+    "ports": [
+     {
+      "connections": [
+       {
+        "dest": {
+         "nodeID": 140627364972336,
+         "portID": 140627365089360,
+         "portName": "in",
+         "portNum": 0
+        },
+        "src": {
+         "nodeID": 140627363935568,
+         "portID": 140627363924240,
+         "portName": "output",
+         "portNum": 0
+        }
+       }
+      ],
+      "id": 140627365089360,
+      "obligation": 100,
+      "portnum": 0,
+      "porttitle": "in",
+      "porttype": 65540,
+      "widgetTitle": null
+     },
+     {
+      "connections": [],
+      "id": 140627365089520,
+      "obligation": null,
+      "portnum": 0,
+      "porttitle": "out",
+      "porttype": 65541,
+      "widgetTitle": null
+     },
+     {
+      "connections": [],
+      "id": 140627365089680,
+      "obligation": null,
+      "portnum": 1,
+      "porttitle": "temp",
+      "porttype": 65541,
+      "widgetTitle": null
+     }
+    ],
+    "pos": [
+     97.57142857142856,
+     355.14285714285717
+    ],
+    "stdwalltime": "0.00039765295297565154",
+    "walltime": "0.002079010009765625",
+    "widget_settings": {
+     "label": "",
+     "parms": [
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627365061488,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": 2,
+        "visible": true
+       },
+       "name": "Complex Display",
+       "type": "<class 'gpi.widgets.ExclusivePushButtons'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": true,
+        "id": 140627365062608,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": 0,
+        "visible": true
+       },
+       "name": "Color Map",
+       "type": "<class 'gpi.widgets.ExclusivePushButtons'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627365063888,
+        "immediate": false,
+        "inport": false,
+        "label": "",
+        "max": 2147483647,
+        "min": 0,
+        "outport": false,
+        "quietval": null,
+        "singlestep": 1,
+        "val": 0,
+        "visible": false,
+        "wrapping": false
+       },
+       "name": "Edge Pixels",
+       "type": "<class 'gpi.widgets.SpinBox'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627365028080,
+        "immediate": false,
+        "inport": false,
+        "label": "",
+        "max": 2147483647,
+        "min": 0,
+        "outport": false,
+        "quietval": null,
+        "singlestep": 1,
+        "val": 0,
+        "visible": false,
+        "wrapping": false
+       },
+       "name": "Black Pixels",
+       "type": "<class 'gpi.widgets.SpinBox'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627365029040,
+        "inport": false,
+        "interp": true,
+        "line": null,
+        "noscroll": true,
+        "outport": false,
+        "points": null,
+        "quietval": null,
+        "scale": 1.0,
+        "val": null,
+        "visible": true
+       },
+       "name": "Viewport:",
+       "type": "<class 'gpi.widgets.DisplayBox'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627365037232,
+        "inport": false,
+        "max": 1,
+        "min": 1,
+        "outport": false,
+        "quietval": null,
+        "val": 1,
+        "visible": true
+       },
+       "name": "Slice",
+       "type": "<class 'gpi.widgets.Slider'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627364971696,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": 0,
+        "visible": true
+       },
+       "name": "Slice/Tile Dimension",
+       "type": "<class 'gpi.widgets.ExclusivePushButtons'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627365038992,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": 0,
+        "visible": true
+       },
+       "name": "Extra Dimension",
+       "type": "<class 'gpi.widgets.ExclusivePushButtons'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627365039792,
+        "immediate": false,
+        "inport": false,
+        "label": "",
+        "max": 2147483647,
+        "min": -2147483648,
+        "outport": false,
+        "quietval": null,
+        "singlestep": 1,
+        "val": 1,
+        "visible": false,
+        "wrapping": false
+       },
+       "name": "# Columns",
+       "type": "<class 'gpi.widgets.SpinBox'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627365065424,
+        "immediate": false,
+        "inport": false,
+        "label": "",
+        "max": 2147483647,
+        "min": -2147483648,
+        "outport": false,
+        "quietval": null,
+        "singlestep": 1,
+        "val": 1,
+        "visible": false,
+        "wrapping": false
+       },
+       "name": "# Rows",
+       "type": "<class 'gpi.widgets.SpinBox'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627365066384,
+        "inport": false,
+        "max": 100,
+        "min": 0,
+        "outport": false,
+        "quietval": null,
+        "val": {
+         "ceiling": 97,
+         "floor": 0,
+         "level": 48,
+         "window": 98
+        },
+        "visible": true
+       },
+       "name": "L W F C:",
+       "type": "<class '/home/touquet/anaconda3/envs/gpi_env/lib/python3.7/site-packages/gpi_core/display/GPI/ImageDisplay_GPI.WindowLevel'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627365071120,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": 0,
+        "visible": true
+       },
+       "name": "Scalar Display",
+       "type": "<class 'gpi.widgets.ExclusivePushButtons'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "decimals": 3,
+        "id": 140627365072560,
+        "immediate": false,
+        "inport": false,
+        "label": "",
+        "max": 10.0,
+        "min": 0.1,
+        "outport": false,
+        "quietval": null,
+        "singlestep": 0.05,
+        "val": 1.0,
+        "visible": true,
+        "wrapping": false
+       },
+       "name": "Gamma",
+       "type": "<class 'gpi.widgets.DoubleSpinBox'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 140627365077392,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": 0,
+        "visible": true
+       },
+       "name": "Zero Ref",
+       "type": "<class 'gpi.widgets.ExclusivePushButtons'>"
+      },
+      {
+       "kwargs": {
+        "button_title": "Auto-Range On",
+        "collapsed": false,
+        "id": 140627365078352,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "toggle": true,
+        "val": false,
+        "visible": true
+       },
+       "name": "Fix Range",
+       "type": "<class 'gpi.widgets.PushButton'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "decimals": 2,
+        "id": 140627365079152,
+        "immediate": false,
+        "inport": false,
+        "label": "",
+        "max": 1.7976931348623157e+308,
+        "min": -1.7976931348623157e+308,
+        "outport": false,
+        "quietval": null,
+        "singlestep": 1.0,
+        "val": 0.0,
+        "visible": true,
+        "wrapping": false
+       },
+       "name": "Range Min",
+       "type": "<class 'gpi.widgets.DoubleSpinBox'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "decimals": 2,
+        "id": 140627365080112,
+        "immediate": false,
+        "inport": false,
+        "label": "",
+        "max": 1.7976931348623157e+308,
+        "min": -1.7976931348623157e+308,
+        "outport": false,
+        "quietval": null,
+        "singlestep": 1.0,
+        "val": 1.05,
+        "visible": true,
+        "wrapping": false
+       },
+       "name": "Range Max",
+       "type": "<class 'gpi.widgets.DoubleSpinBox'>"
+      }
+     ]
+    }
+   }
+  ]
+ }
+}

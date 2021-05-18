@@ -64,8 +64,8 @@ class ExternalNode(gpi.NodeAPI):
         # IO Ports
         self.addInPort('images', 'NPYarray', dtype=np.complex64, ndim=5)
         self.addInPort('header', 'DICT')
-        self.addOutPort('output_images', 'NPYarray', dtype=np.complex128, ndim=5)
-        self.addOutPort('oversampled_images', 'NPYarray', dtype=np.complex128, ndim=5)
+        self.addOutPort('output_images', 'NPYarray', dtype=np.complex64, ndim=5)
+        self.addOutPort('oversampled_images', 'NPYarray', dtype=np.complex64, ndim=5)
 
 
     # validate the data - runs immediately before compute
@@ -105,9 +105,9 @@ if __name__=='__main__':
 
     import pickle
     import numpy as np
-    from .oversamples_kspaces_from_reader_output_GPI import DC_offset_correction, oversampled_kspace_from_scan
-    data = np.load(r'/home/touquet/MRIData_tmp/20210127_162451_QFLOW_Ao__kspaces.npy')
+    # from .oversamples_kspaces_from_reader_output_GPI import DC_offset_correction, oversampled_kspace_from_scan
+    data = np.load(r'/home/touquet/MRIData_tmp/20210127_162451_QFLOW_Ao__oversampled_images.npy')
     header = pickle.load(open(r'/home/touquet/MRIData_tmp/20210127_162451_QFLOW_Ao__header.pickle','rb'))
-    oversampled_kspaces = oversampled_kspace_from_scan(data,header)
-    test = reconprep_images(oversampled_kspaces,header)
+    # oversampled_kspaces = oversampled_kspace_from_scan(data,header)
+    test = reconprep_images(data,header)
     import pdb;pdb.set_trace()
